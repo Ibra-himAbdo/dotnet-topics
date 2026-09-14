@@ -5,6 +5,15 @@
 
 ---
 
+## 🌐 0. .NET Topics & Practice Resources
+*(مصادر ومراجعة موضوعات .NET)*
+
+| # | الموضوع (Topic) | 🔗 المصدر |
+|:---:|---|:---:|
+| 1 | **.NET Topics — Comprehensive Topic Guide & MCQ Practice** | [Open .NET Topics](https://ibra-himabdo.github.io/dotnet-topics/) |
+
+---
+
 ## 🗄️ 1. Database Mapping & ERD
 *(قواعد البيانات)*
 
