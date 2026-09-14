@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Certification MCQ Bank (660 Questions)</title>
+  
+  <!-- SEO & Social Sharing Meta Tags -->
+  <meta name="description" content="Comprehensive Developer Certification Multiple Choice Question Bank and Interactive Quiz Portal with 660 questions covering C#, SQL Server, and Web Development.">
+  <meta property="og:title" content="Developer Certification MCQ Bank (660 Questions)">
+  <meta property="og:description" content="Master C#, SQL Server, and Web Development certifications with 660 exam-grade MCQs, instant explanations, live learning analytics, and timed exam simulations.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b0f19">
+
+  <!-- Google Fonts: Outfit & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Modular Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- Canvas Confetti Layer -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- App Header & Navigation -->
+  <header>
+    <div class="header-container">
+      <a href="./index.html" class="brand-title">
+        <div class="logo-badge" aria-hidden="true">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="brand-text">
+          <h1>Developer Certification Portal</h1>
+          <div class="brand-subtitle">660 Exam-Grade MCQs &bull; C#, SQL Server & Web Development</div>
+        </div>
+      </a>
+      <div class="header-actions">
+        <button id="btnPracticeMode" class="btn-nav active" onclick="setMode('practice')">
+          <i class="fa-solid fa-bullseye"></i> Practice
+        </button>
+        <button id="btnExamMode" class="btn-nav" onclick="setMode('exam')">
+          <i class="fa-solid fa-stopwatch"></i> Exam Mode
+        </button>
+        <button class="btn-nav" onclick="togglePalette()" title="Open Question Matrix (Hot-key: M)">
+          <i class="fa-solid fa-table-cells"></i> Matrix
+        </button>
+        <button class="btn-sound-toggle" onclick="toggleSound()" title="Toggle Sound Effects" aria-label="Toggle Sound">
+          <i class="fa-solid fa-volume-high" id="soundIcon"></i>
+        </button>
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+          <i class="fa-solid fa-sun" id="themeIcon"></i>
+        </button>
+        <button class="btn-nav" onclick="openShortcutsModal()" title="Keyboard Shortcuts (Hot-key: ?)">
+          <i class="fa-solid fa-keyboard"></i>
+        </button>
+        <a href="./README.md" class="btn-nav" title="Repository Docs & Setup Guide">
+          <i class="fa-solid fa-book"></i> Docs
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main>
+    <!-- Learning Dashboard & Analytics Hero Card -->
+    <section class="dashboard-card" aria-label="Learning Progress Dashboard">
+      <div class="dashboard-top-row">
+        <div class="dashboard-header-title">
+          <i class="fa-solid fa-chart-line"></i>
+          <div>
+            <h2>Learning Analytics &amp; Tracking</h2>
+            <div style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 2px;">
+              Progress and answers automatically saved in browser local storage.
+            </div>
+          </div>
+        </div>
+        <div class="dashboard-actions">
+          <button class="btn-dash-action" onclick="shuffleCurrentQuestions()" title="Shuffle questions randomly">
+            <i class="fa-solid fa-shuffle"></i> Shuffle
+          </button>
+          <button class="btn-dash-action btn-dash-reset" onclick="promptResetProgress()" title="Clear all saved answers">
+            <i class="fa-solid fa-trash-can"></i> Reset Progress
+          </button>
+        </div>
+      </div>
+
+      <!-- Overall Completion Bar -->
+      <div class="overall-progress-wrap">
+        <div class="progress-header-labels">
+          <span class="progress-label-title">
+            <i class="fa-solid fa-bars-progress"></i> Overall Bank Completion
+          </span>
+          <span class="progress-value-text" id="dashOverallText">0% (0/660)</span>
+        </div>
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="dashOverallFill"></div>
+        </div>
+      </div>
+
+      <!-- Subject Mastery Breakdown -->
+      <div class="mastery-grid">
+        <!-- C# Card -->
+        <div class="mastery-card">
+          <div class="mastery-header">
+            <span class="mastery-title" style="color: #c084fc;">
+              <i class="fa-brands fa-microsoft"></i> C# (.NET 20483B)
+            </span>
+            <span class="mastery-badge tag-csharp">195 Qs</span>
+          </div>
+          <div class="mastery-stats-row">
+            <span>Completed:</span>
+            <strong id="masteryCsText">0/195 (0%)</strong>
+          </div>
+          <div class="mastery-mini-track">
+            <div class="mastery-mini-fill fill-csharp" id="masteryCsFill"></div>
+          </div>
+        </div>
+
+        <!-- SQL Server Card -->
+        <div class="mastery-card">
+          <div class="mastery-header">
+            <span class="mastery-title" style="color: #38bdf8;">
+              <i class="fa-solid fa-database"></i> SQL Server (20761)
+            </span>
+            <span class="mastery-badge tag-sql">255 Qs</span>
+          </div>
+          <div class="mastery-stats-row">
+            <span>Completed:</span>
+            <strong id="masterySqlText">0/255 (0%)</strong>
+          </div>
+          <div class="mastery-mini-track">
+            <div class="mastery-mini-fill fill-sql" id="masterySqlFill"></div>
+          </div>
+        </div>
+
+        <!-- Web Dev Card -->
+        <div class="mastery-card">
+          <div class="mastery-header">
+            <span class="mastery-title" style="color: #fbbf24;">
+              <i class="fa-brands fa-html5"></i> Web Dev (20480B)
+            </span>
+            <span class="mastery-badge tag-web">210 Qs</span>
+          </div>
+          <div class="mastery-stats-row">
+            <span>Completed:</span>
+            <strong id="masteryWebText">0/210 (0%)</strong>
+          </div>
+          <div class="mastery-mini-track">
+            <div class="mastery-mini-fill fill-web" id="masteryWebFill"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timed Exam Simulation Banner -->
+    <div id="examBanner">
+      <div>
+        <h3 style="color: var(--text-primary); font-size: 1.25rem; margin-bottom: 0.25rem; display: flex; align-items: center; gap: 0.5rem;">
+          <i class="fa-solid fa-stopwatch-20" style="color: var(--accent-amber);"></i> Exam Simulation Active
+        </h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+          Select your choices without immediate feedback. You can flag questions for review or use the Question Matrix. Click Submit when ready.
+        </p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap;">
+        <div class="timer-box">
+          <i class="fa-regular fa-clock"></i>
+          <span id="examTimer">00:00</span>
+        </div>
+        <button class="btn-submit-exam" onclick="submitExam()">
+          <i class="fa-solid fa-paper-plane"></i> Submit Exam
+        </button>
+      </div>
+    </div>
+
+    <!-- Filter & Search Controls -->
+    <section class="controls-panel" aria-label="Question filters">
+      <div class="filter-group">
+        <label for="subjectFilter"><i class="fa-solid fa-book-open"></i> Subject / Course</label>
+        <select id="subjectFilter" onchange="onSubjectChange()">
+          <option value="ALL">All Subjects (660 Questions)</option>
+          <option value="C#">C# Programming (195 Questions)</option>
+          <option value="SQL Server">Microsoft SQL Server (255 Questions)</option>
+          <option value="HTML, CSS & JavaScript">HTML5, CSS3 & JavaScript (210 Questions)</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="moduleFilter"><i class="fa-solid fa-layer-group"></i> Module / Topic</label>
+        <select id="moduleFilter" onchange="renderQuestions()">
+          <option value="ALL">All Modules</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="searchInput"><i class="fa-solid fa-magnifying-glass"></i> Search (Hot-key: /)</label>
+        <div class="search-input-wrapper">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <input type="text" id="searchInput" placeholder="Search keywords (e.g. LINQ, JOIN, async, flexbox)..." oninput="renderQuestions()">
+        </div>
+      </div>
+
+      <div class="filter-group" id="examCountGroup" style="display: none;">
+        <label for="examCountSelect"><i class="fa-solid fa-list-ol"></i> Exam Size</label>
+        <select id="examCountSelect" onchange="startNewExam()">
+          <option value="25">25 Random Questions</option>
+          <option value="50">50 Random Questions</option>
+          <option value="100">100 Random Questions</option>
+          <option value="ALL">All Filtered Questions</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Status Quick Filter Pills -->
+    <div class="status-pills-bar" role="tablist" aria-label="Filter questions by status">
+      <button class="pill-filter-btn active" data-status="ALL" onclick="setStatusFilter('ALL')">
+        <i class="fa-solid fa-list"></i> All <span class="pill-count" id="pillCountAll">660</span>
+      </button>
+      <button class="pill-filter-btn" data-status="UNANSWERED" onclick="setStatusFilter('UNANSWERED')">
+        <i class="fa-regular fa-circle"></i> Unanswered <span class="pill-count" id="pillCountUnanswered">0</span>
+      </button>
+      <button class="pill-filter-btn" data-status="ANSWERED" onclick="setStatusFilter('ANSWERED')">
+        <i class="fa-solid fa-check-double"></i> Answered <span class="pill-count" id="pillCountAnswered">0</span>
+      </button>
+      <button class="pill-filter-btn" data-status="CORRECT" onclick="setStatusFilter('CORRECT')">
+        <i class="fa-solid fa-circle-check" style="color: var(--accent-emerald);"></i> Correct <span class="pill-count" id="pillCountCorrect">0</span>
+      </button>
+      <button class="pill-filter-btn" data-status="INCORRECT" onclick="setStatusFilter('INCORRECT')">
+        <i class="fa-solid fa-circle-xmark" style="color: var(--accent-rose);"></i> Incorrect <span class="pill-count" id="pillCountIncorrect">0</span>
+      </button>
+      <button class="pill-filter-btn" data-status="BOOKMARKED" onclick="setStatusFilter('BOOKMARKED')">
+        <i class="fa-solid fa-star" style="color: var(--accent-amber);"></i> Bookmarked <span class="pill-count" id="pillCountBookmarked">0</span>
+      </button>
+    </div>
+
+    <!-- Stats & Live Accuracy Bar -->
+    <div class="stats-bar">
+      <div class="stats-left">
+        <div class="counter-badge">
+          <i class="fa-solid fa-eye"></i> Showing <strong id="visibleCount">0</strong> of <strong id="totalCount">660</strong>
+        </div>
+        <div class="counter-badge">
+          <i class="fa-solid fa-bullseye"></i> Accuracy: <span class="accuracy-badge-val" id="headerAccuracyCount">0%</span>
+        </div>
+      </div>
+      <div class="stats-right">
+        <div class="counter-badge">
+          <i class="fa-solid fa-pen-to-square"></i> Answered: <strong id="answeredCount">0</strong>
+        </div>
+        <div class="counter-badge">
+          <i class="fa-solid fa-star" style="color: var(--accent-amber);"></i> Bookmarks: <strong id="bookmarkCount">0</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dynamic Questions List -->
+    <section class="questions-container" id="questionsContainer" aria-label="Questions list">
+      <!-- Rendered dynamically by js/app.js -->
+    </section>
+  </main>
+
+  <!-- Slide-Out Question Navigator Palette Drawer -->
+  <div class="palette-drawer-overlay" id="paletteDrawerOverlay" onclick="togglePalette(false)"></div>
+  <aside class="palette-drawer" id="paletteDrawer" aria-label="Question Matrix Drawer">
+    <div class="palette-header">
+      <h3><i class="fa-solid fa-table-cells"></i> Question Matrix <span id="paletteTitleCount" style="color: var(--accent-blue); font-size: 0.95rem;"></span></h3>
+      <button class="btn-close-palette" onclick="togglePalette(false)" aria-label="Close Matrix">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="palette-legend">
+      <div class="legend-item"><span class="legend-dot dot-unanswered"></span> Empty</div>
+      <div class="legend-item"><span class="legend-dot dot-correct"></span> Correct</div>
+      <div class="legend-item"><span class="legend-dot dot-incorrect"></span> Incorrect</div>
+      <div class="legend-item"><span class="legend-dot dot-flagged"></span> Flagged</div>
+    </div>
+    <div class="palette-body" id="paletteBody">
+      <!-- Dynamically generated question numbers -->
+    </div>
+  </aside>
+
+  <!-- Certification Score Modal -->
+  <div class="modal-overlay" id="scoreModal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <div class="score-circle" id="modalScoreCircle">
+        <div id="modalScorePercent">0%</div>
+        <span>Score</span>
+      </div>
+      <h2 id="modalScoreTitle">Examination Completed</h2>
+      <p id="modalScoreDetails" style="color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 0.95rem;"></p>
+      
+      <!-- Domain Breakdown -->
+      <div class="domain-breakdown-list" id="modalDomainBreakdown"></div>
+
+      <div class="modal-actions">
+        <button class="btn-modal-primary" onclick="reviewMissedQuestions()">
+          <i class="fa-solid fa-filter"></i> Review Missed Questions
+        </button>
+        <button class="btn-modal-secondary" onclick="closeScoreModal()">
+          <i class="fa-solid fa-book-open"></i> Review All
+        </button>
+        <button class="btn-modal-secondary" onclick="startNewExam()">
+          <i class="fa-solid fa-rotate-right"></i> Retake Exam
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reset Progress Confirmation Modal -->
+  <div class="modal-overlay" id="resetModal" role="dialog" aria-modal="true">
+    <div class="modal-content" style="max-width: 440px;">
+      <i class="fa-solid fa-triangle-exclamation" style="font-size: 3rem; color: var(--accent-rose); margin-bottom: 0.75rem;"></i>
+      <h2>Reset All Progress?</h2>
+      <p style="color: var(--text-secondary); font-size: 0.92rem; margin: 1rem 0;">
+        This will clear all your recorded answers, reset your accuracy metrics, and restore all questions to unanswered. Your bookmarks will be preserved.
+      </p>
+      <div class="modal-actions">
+        <button class="btn-modal-primary" style="background: var(--accent-rose); color: white;" onclick="confirmResetProgress()">
+          <i class="fa-solid fa-trash-can"></i> Yes, Reset Answers
+        </button>
+        <button class="btn-modal-secondary" onclick="closeResetModal()">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Keyboard Shortcuts Cheat-sheet Modal -->
+  <div class="modal-overlay" id="shortcutsModal" role="dialog" aria-modal="true">
+    <div class="modal-content" style="max-width: 500px;">
+      <h2><i class="fa-solid fa-keyboard" style="color: var(--accent-blue);"></i> Keyboard Shortcuts</h2>
+      <table class="shortcuts-table">
+        <tbody>
+          <tr>
+            <td><span class="kbd-badge">1</span> / <span class="kbd-badge">2</span> / <span class="kbd-badge">3</span> / <span class="kbd-badge">4</span> or <span class="kbd-badge">A</span> - <span class="kbd-badge">D</span></td>
+            <td>Select option on active/hovered question</td>
+          </tr>
+          <tr>
+            <td><span class="kbd-badge">J</span> / <span class="kbd-badge">↓</span></td>
+            <td>Navigate to next question card</td>
+          </tr>
+          <tr>
+            <td><span class="kbd-badge">K</span> / <span class="kbd-badge">↑</span></td>
+            <td>Navigate to previous question card</td>
+          </tr>
+          <tr>
+            <td><span class="kbd-badge">M</span></td>
+            <td>Toggle Question Matrix palette drawer</td>
+          </tr>
+          <tr>
+            <td><span class="kbd-badge">/</span></td>
+            <td>Focus search keyword box</td>
+          </tr>
+          <tr>
+            <td><span class="kbd-badge">?</span></td>
+            <td>Open this keyboard shortcuts guide</td>
+          </tr>
+          <tr>
+            <td><span class="kbd-badge">Esc</span></td>
+            <td>Close any open modal or drawer</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="modal-actions">
+        <button class="btn-modal-primary" onclick="closeShortcutsModal()">
+          Got It!
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Footer -->
+  <footer>
+    <p>Developer Certification MCQ Bank &bull; Curriculum-Aligned for Microsoft 20483B (C#), 20761 (SQL Server), and 20480B (HTML/CSS/JS)</p>
+    <p style="font-size: 0.8rem; margin-top: 0.4rem; color: var(--text-muted);">Self-contained, offline-compatible, and GitHub Pages ready.</p>
+  </footer>
+
+  <!-- Modular Scripts: Data Layer followed by Application Controller -->
+  <script src="data/quiz-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

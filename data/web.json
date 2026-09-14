@@ -1,0 +1,2942 @@
+[
+  {
+    "id": 451,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 1: Overview of HTML and CSS",
+    "question": "What is the correct and official DOCTYPE declaration for an HTML5 document?",
+    "options": [
+      "A) <!DOCTYPE html>",
+      "B) <!DOCTYPE HTML5 PUBLIC>",
+      "C) <!DOCTYPE html SYSTEM \"HTML5.dtd\">",
+      "D) <doctype html5>"
+    ],
+    "answer": "A",
+    "explanation": "HTML5 drastically simplified the document type declaration to case-insensitive '<!DOCTYPE html>', which triggers standard rendering mode across all modern browsers."
+  },
+  {
+    "id": 452,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 1: Overview of HTML and CSS",
+    "question": "Which meta tag is used to specify the UTF-8 character encoding in an HTML5 document?",
+    "options": [
+      "A) <meta charset=\"utf-8\">",
+      "B) <meta encoding=\"utf-8\">",
+      "C) <meta http-equiv=\"character-set\" content=\"utf-8\">",
+      "D) <meta type=\"charset/utf-8\">"
+    ],
+    "answer": "A",
+    "explanation": "In HTML5, character encoding is declared compactly using '<meta charset=\"utf-8\">', placed early in the <head> element."
+  },
+  {
+    "id": 453,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 1: Overview of HTML and CSS",
+    "question": "What is the recommended method for linking an external CSS stylesheet to an HTML document?",
+    "options": [
+      "A) <link rel=\"stylesheet\" href=\"styles.css\">",
+      "B) <style src=\"styles.css\"></style>",
+      "C) <stylesheet>styles.css</stylesheet>",
+      "D) <import href=\"styles.css\">"
+    ],
+    "answer": "A",
+    "explanation": "The '<link>' tag inside the <head> element with attributes 'rel=\"stylesheet\"' and 'href=\"path/to/file.css\"' is the standard way to attach an external stylesheet."
+  },
+  {
+    "id": 454,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 1: Overview of HTML and CSS",
+    "question": "What is the main drawback of applying inline CSS styles directly on HTML elements via the 'style' attribute?",
+    "options": [
+      "A) Inline styles are ignored by modern browsers",
+      "B) They tightly couple presentation with structure, make site-wide maintenance difficult, and cannot be cached by the browser",
+      "C) Inline styles only work for font colors",
+      "D) Inline styles require JavaScript to execute"
+    ],
+    "answer": "B",
+    "explanation": "Inline styles violate separation of concerns, lead to duplicated code, are difficult to maintain globally, and cannot be cached separately like external CSS files."
+  },
+  {
+    "id": 455,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 1: Overview of HTML and CSS",
+    "question": "Which HTML element is the root element of an HTML page?",
+    "options": [
+      "A) <body>",
+      "B) <head>",
+      "C) <html>",
+      "D) <!DOCTYPE>"
+    ],
+    "answer": "C",
+    "explanation": "The '<html>' element is the top-level root element that wraps all other HTML tags (both <head> and <body>) in the document."
+  },
+  {
+    "id": 456,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 1: Overview of HTML and CSS",
+    "question": "What CSS syntax consists of a selector, property, and value?",
+    "options": [
+      "A) Selector { property: value; }",
+      "B) Selector = (property -> value);",
+      "C) [property = value] => Selector;",
+      "D) Selector : { property = value };"
+    ],
+    "answer": "A",
+    "explanation": "A standard CSS rule-set consists of a selector pointing to the HTML element to style, followed by a declaration block enclosed in curly braces containing 'property: value;' pairs."
+  },
+  {
+    "id": 457,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 1: Overview of HTML and CSS",
+    "question": "Where should the <title> tag be placed in an HTML document?",
+    "options": [
+      "A) Directly inside the <body> tag",
+      "B) Inside the <head> container tag",
+      "C) Before the <!DOCTYPE html> tag",
+      "D) In the <footer> tag"
+    ],
+    "answer": "B",
+    "explanation": "The <title> tag must be located inside the <head> block, defining the title displayed in the browser's tab or title bar."
+  },
+  {
+    "id": 458,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 1: Overview of HTML and CSS",
+    "question": "What is an HTML 'void' or self-closing element that does not have an end tag?",
+    "options": [
+      "A) <div>",
+      "B) <img>",
+      "C) <p>",
+      "D) <span>"
+    ],
+    "answer": "B",
+    "explanation": "Void elements cannot contain child nodes or closing tags. Examples include <img>, <input>, <br>, <hr>, and <meta>."
+  },
+  {
+    "id": 459,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 1: Overview of HTML and CSS",
+    "question": "Which CSS property is used to change the background color of an element?",
+    "options": [
+      "A) color",
+      "B) background-color",
+      "C) bgcolor",
+      "D) fill-color"
+    ],
+    "answer": "B",
+    "explanation": "'background-color' sets the background color of an element in CSS. The 'color' property sets the foreground text color."
+  },
+  {
+    "id": 460,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 1: Overview of HTML and CSS",
+    "question": "How do you write comments in HTML vs CSS?",
+    "options": [
+      "A) HTML: <!-- comment --> | CSS: /* comment */",
+      "B) HTML: // comment | CSS: <!-- comment -->",
+      "C) HTML: /* comment */ | CSS: // comment",
+      "D) HTML: # comment | CSS: # comment"
+    ],
+    "answer": "A",
+    "explanation": "HTML comments use '<!-- comment -->' delimiters. CSS comments use '/* comment */' delimiters."
+  },
+  {
+    "module": "Module 1: Overview of HTML and CSS",
+    "question": "What is the primary purpose of the '<meta name=\"description\">' tag in an HTML document?",
+    "options": [
+      "A) Provides a concise summary of the page for search engine results pages (SERP snippet) and social shares",
+      "B) Configures CSS font styles",
+      "C) Connects to a database description table",
+      "D) Defines internal browser memory limits"
+    ],
+    "answer": "A",
+    "explanation": "The meta description tag provides search engines with a summary of the page, frequently used as the snippet preview under the title in search engine results pages (SEO).",
+    "id": 461,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 1: Overview of HTML and CSS",
+    "question": "What is the key difference between '<script defer>' and '<script async>'?",
+    "options": [
+      "A) 'defer' downloads in parallel and executes in document order after the DOM is fully parsed; 'async' downloads in parallel and executes immediately as soon as downloaded, pausing DOM parsing",
+      "B) 'defer' is for external scripts; 'async' is for inline scripts",
+      "C) 'async' executes after DOMContentLoaded; 'defer' does not",
+      "D) There is no difference"
+    ],
+    "answer": "A",
+    "explanation": "'defer' guarantees execution order after HTML parsing finishes. 'async' executes asynchronously as soon as the script arrives, without guaranteeing order.",
+    "id": 462,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 1: Overview of HTML and CSS",
+    "question": "What is the difference between a CSS Reset (e.g. Meyerweb) and Normalize.css?",
+    "options": [
+      "A) CSS Reset strips all default browser styling to zero; Normalize.css preserves useful browser defaults while correcting bugs and unifying cross-browser inconsistencies",
+      "B) Normalize.css removes all styles",
+      "C) CSS Reset is built into Chrome only",
+      "D) Normalize.css is a JavaScript library"
+    ],
+    "answer": "A",
+    "explanation": "A CSS Reset resets margins, paddings, and font sizes to a blank slate. Normalize.css preserves useful defaults (like headings and list bullets) while standardizing element styling across different browsers.",
+    "id": 463,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 1: Overview of HTML and CSS",
+    "question": "What do the components in the CSS color function 'hsl(210, 100%, 50%)' represent?",
+    "options": [
+      "A) Hue (0-360 degrees on the color wheel), Saturation (percentage), and Lightness (percentage)",
+      "B) Height, Size, and Length",
+      "C) High, Standard, and Low",
+      "D) Hexadecimal, Standard, and Luminescence"
+    ],
+    "answer": "A",
+    "explanation": "HSL stands for Hue (angle on color wheel: 0=red, 120=green, 240=blue), Saturation (0% grey to 100% full color), and Lightness (0% black to 100% white).",
+    "id": 464,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 1: Overview of HTML and CSS",
+    "question": "Which tag and attribute configure the small icon displayed in the browser tab (Favicon)?",
+    "options": [
+      "A) <link rel=\"icon\" href=\"favicon.ico\">",
+      "B) <meta name=\"icon\" content=\"favicon.ico\">",
+      "C) <img src=\"favicon.ico\" type=\"tab\">",
+      "D) <favicon src=\"favicon.ico\">"
+    ],
+    "answer": "A",
+    "explanation": "The '<link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">' element inside the <head> section specifies the favicon displayed next to the page title in browser tabs.",
+    "id": 465,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "id": 466,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 2: HTML5 Document Structure & DOM",
+    "question": "What is the semantic purpose of the HTML5 <header> element?",
+    "options": [
+      "A) It replaces the <head> tag for metadata",
+      "B) It represents introductory content or a set of navigational links for its nearest sectioning ancestor or page",
+      "C) It defines the primary heading <h1> of the page only",
+      "D) It creates an HTTP request header"
+    ],
+    "answer": "B",
+    "explanation": "The <header> element represents a container for introductory content (such as a logo, heading, author info) or navigational links for an article or page."
+  },
+  {
+    "id": 467,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 2: HTML5 Document Structure & DOM",
+    "question": "Which HTML5 element represents an independent, self-contained piece of content that could be distributed or syndicated separately (e.g. a blog post, forum post)?",
+    "options": [
+      "A) <section>",
+      "B) <article>",
+      "C) <aside>",
+      "D) <div>"
+    ],
+    "answer": "B",
+    "explanation": "<article> represents a self-contained composition in a document, page, application, or site that is intended to be independently distributable or reusable (e.g., news story, blog entry)."
+  },
+  {
+    "id": 468,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 2: HTML5 Document Structure & DOM",
+    "question": "What does the HTML5 <aside> element represent?",
+    "options": [
+      "A) Content that is separate and tangentially related to the content around it (like sidebars, pull quotes, or related links)",
+      "B) Hidden comments not visible to screen readers",
+      "C) Pop-up alert boxes",
+      "D) Deprecated code"
+    ],
+    "answer": "A",
+    "explanation": "The <aside> element represents a portion of a document whose content is only tangentially related to the document's main content, commonly presented as a sidebar or callout."
+  },
+  {
+    "id": 469,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 2: HTML5 Document Structure & DOM",
+    "question": "Which element wraps self-contained visual media (like an image, illustration, or code listing) together with an optional <figcaption>?",
+    "options": [
+      "A) <picture>",
+      "B) <figure>",
+      "C) <media>",
+      "D) <illustration>"
+    ],
+    "answer": "B",
+    "explanation": "The <figure> element specifies self-contained content, frequently with a caption declared using the <figcaption> element."
+  },
+  {
+    "id": 470,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 2: HTML5 Document Structure & DOM",
+    "question": "What is the Document Object Model (DOM)?",
+    "options": [
+      "A) A programming interface (API) that represents an HTML document as a tree of objects that can be manipulated programmatically",
+      "B) A database management system for web browsers",
+      "C) A CSS compilation tool",
+      "D) A web hosting provider protocol"
+    ],
+    "answer": "A",
+    "explanation": "The DOM represents an HTML/XML document in memory as a logical tree hierarchy of nodes (elements, attributes, text), enabling languages like JavaScript to dynamically modify content and structure."
+  },
+  {
+    "id": 471,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 2: HTML5 Document Structure & DOM",
+    "question": "Which HTML5 element represents a section of a page whose purpose is to provide navigation links?",
+    "options": [
+      "A) <nav>",
+      "B) <menu>",
+      "C) <links>",
+      "D) <dir>"
+    ],
+    "answer": "A",
+    "explanation": "The <nav> element represents a major navigation block containing links either to other pages or to parts within the current page."
+  },
+  {
+    "id": 472,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 2: HTML5 Document Structure & DOM",
+    "question": "What is the semantic role of the <main> element in HTML5?",
+    "options": [
+      "A) It specifies the dominant, central content unique to the document, excluding headers, footers, and sidebars",
+      "B) It designates the main JavaScript execution entry point",
+      "C) It wraps the entire <html> body",
+      "D) It can appear multiple times inside an <article>"
+    ],
+    "answer": "A",
+    "explanation": "The <main> element represents the dominant, unique content of the <body> of a document. It should not contain content repeated across pages (like headers, footers, or navigation)."
+  },
+  {
+    "id": 473,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 2: HTML5 Document Structure & DOM",
+    "question": "In the DOM tree, what type of node represents the actual text inside an element (e.g. the text 'Hello' in <p>Hello</p>)?",
+    "options": [
+      "A) Element Node",
+      "B) Text Node",
+      "C) Attribute Node",
+      "D) Comment Node"
+    ],
+    "answer": "B",
+    "explanation": "In the W3C DOM model, plain text contained inside elements is represented by Text nodes (nodeType 3), which are child nodes of the parent Element node."
+  },
+  {
+    "id": 474,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 2: HTML5 Document Structure & DOM",
+    "question": "What is the purpose of semantic HTML elements over generic <div> and <span> tags?",
+    "options": [
+      "A) They provide clear meaning to search engines, screen readers, assistive devices, and developers about the content's role",
+      "B) They render with built-in 3D GPU animations",
+      "C) They prevent web pages from being downloaded",
+      "D) They speed up internet bandwidth"
+    ],
+    "answer": "A",
+    "explanation": "Semantic tags describe their meaning and purpose to the browser, assistive technologies (screen readers for accessibility), search engine bots (SEO), and human maintainers."
+  },
+  {
+    "id": 475,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 2: HTML5 Document Structure & DOM",
+    "question": "Which HTML5 element represents a thematic grouping of content, typically with a heading?",
+    "options": [
+      "A) <section>",
+      "B) <span>",
+      "C) <group>",
+      "D) <block>"
+    ],
+    "answer": "A",
+    "explanation": "<section> represents a standalone generic section of a document that does not have a more specific semantic element to represent it, typically starting with a heading element (h1-h6)."
+  },
+  {
+    "module": "Module 2: HTML5 Document Structure & DOM",
+    "question": "What is the semantic purpose of the HTML5 '<time>' element?",
+    "options": [
+      "A) Encodes a machine-readable date/time using the 'datetime' attribute while presenting human-readable text",
+      "B) Displays an analog clock on the page",
+      "C) Starts a JavaScript countdown timer",
+      "D) Records user time spent on the page"
+    ],
+    "answer": "A",
+    "explanation": "The <time> element provides machine-readable dates and times (via the 'datetime' attribute in ISO format, e.g. datetime=\"2026-09-14\") to search engines and calendar apps.",
+    "id": 476,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 2: HTML5 Document Structure & DOM",
+    "question": "Which HTML5 element represents text highlighted for reference or notation purposes due to its relevance in another context?",
+    "options": [
+      "A) <mark>",
+      "B) <highlight>",
+      "C) <b>",
+      "D) <em>"
+    ],
+    "answer": "A",
+    "explanation": "The <mark> element represents text marked or highlighted for reference purposes (such as search result term matches), typically rendered with a yellow background.",
+    "id": 477,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 2: HTML5 Document Structure & DOM",
+    "question": "Which HTML5 pair creates a native disclosure widget that the user can click to expand and collapse content without any JavaScript?",
+    "options": [
+      "A) <details> and <summary>",
+      "B) <accordion> and <tab>",
+      "C) <collapse> and <header>",
+      "D) <toggle> and <item>"
+    ],
+    "answer": "A",
+    "explanation": "The <details> element creates an interactive disclosure widget, with <summary> defining the visible heading. Clicking the summary toggles the visibility of the remaining details content.",
+    "id": 478,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 2: HTML5 Document Structure & DOM",
+    "question": "What is the difference between the HTML5 '<progress>' element and the '<meter>' element?",
+    "options": [
+      "A) <progress> represents task completion progress (0% to 100%); <meter> represents a scalar measurement within a known range (like disk space, battery level, or exam grade)",
+      "B) <meter> is animated; <progress> is static",
+      "C) <progress> only works in forms",
+      "D) There is no distinction"
+    ],
+    "answer": "A",
+    "explanation": "<progress> denotes the progress of an ongoing task. <meter> denotes a gauge or scalar measurement within a known minimum/maximum range (e.g. CPU usage, storage space).",
+    "id": 479,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 2: HTML5 Document Structure & DOM",
+    "question": "Which DOM properties allow navigating to an element's parent, child, and sibling elements excluding whitespace text nodes?",
+    "options": [
+      "A) parentElement, children, nextElementSibling, previousElementSibling",
+      "B) parentNode, childNodes, nextSibling, previousSibling",
+      "C) topElement, subElements, siblingLeft, siblingRight",
+      "D) getParent(), getChildren(), getSibling()"
+    ],
+    "answer": "A",
+    "explanation": "The Element traversal properties (parentElement, children, nextElementSibling, previousElementSibling) only return Element nodes (nodeType 1), ignoring whitespace text nodes.",
+    "id": 480,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "id": 481,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 3: CSS Selectors & Cascading",
+    "question": "Which CSS selector targets an element by its unique ID attribute?",
+    "options": [
+      "A) .header",
+      "B) #header",
+      "C) *header",
+      "D) @header"
+    ],
+    "answer": "B",
+    "explanation": "In CSS, the hash symbol '#' denotes an ID selector (e.g. #header matches <div id=\"header\">). The period '.' denotes a class selector."
+  },
+  {
+    "id": 482,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 3: CSS Selectors & Cascading",
+    "question": "What is the difference between the descendant combinator (div p) and the child combinator (div > p)?",
+    "options": [
+      "A) 'div p' matches any <p> nested at any depth inside a <div>; 'div > p' matches only <p> elements that are DIRECT children of a <div>",
+      "B) 'div > p' matches all paragraphs; 'div p' matches only the first paragraph",
+      "C) 'div > p' matches siblings only",
+      "D) There is no difference"
+    ],
+    "answer": "A",
+    "explanation": "The space character is the descendant selector (matching nested descendants at any depth). The '>' symbol is the child combinator, matching only direct immediate children."
+  },
+  {
+    "id": 483,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 3: CSS Selectors & Cascading",
+    "question": "Which attribute selector matches an element whose attribute value begins with a specific string?",
+    "options": [
+      "A) [href^=\"https\"]",
+      "B) [href$=\"https\"]",
+      "C) [href*=\"https\"]",
+      "D) [href~=\"https\"]"
+    ],
+    "answer": "A",
+    "explanation": "'[attr^=val]' matches values starting with 'val'. '[attr$=val]' matches values ending with 'val'. '[attr*=val]' matches values containing the substring 'val'."
+  },
+  {
+    "id": 484,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 3: CSS Selectors & Cascading",
+    "question": "What is the CSS specificity order from HIGHEST to LOWEST?",
+    "options": [
+      "A) Inline style > ID selector > Class/Attribute/Pseudo-class > Element/Pseudo-element",
+      "B) Element > Class > ID > Inline style",
+      "C) ID selector > Inline style > Element > Class",
+      "D) Class > ID > Inline style > Element"
+    ],
+    "answer": "A",
+    "explanation": "CSS specificity is calculated in categories: Inline styles (1,0,0,0) > IDs (0,1,0,0) > Classes, attributes, and pseudo-classes (0,0,1,0) > Elements and pseudo-elements (0,0,0,1)."
+  },
+  {
+    "id": 485,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 3: CSS Selectors & Cascading",
+    "question": "What does the adjacent sibling combinator '+' select in 'h2 + p'?",
+    "options": [
+      "A) All <p> elements inside an <h2>",
+      "B) The very first <p> element that immediately follows an <h2> at the same hierarchy level",
+      "C) All <p> elements that share a parent with <h2>",
+      "D) Both <h2> and <p> elements together"
+    ],
+    "answer": "B",
+    "explanation": "The adjacent sibling combinator '+' matches an element that immediately follows the specified element and shares the same direct parent."
+  },
+  {
+    "id": 486,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 3: CSS Selectors & Cascading",
+    "question": "What happens when '!important' is added to a CSS property value declaration?",
+    "options": [
+      "A) It overrides standard cascade specificity and applies the rule over other normal declarations",
+      "B) It causes a compilation error in modern browsers",
+      "C) It encrypts the CSS rule",
+      "D) It only applies when the page is printed"
+    ],
+    "answer": "A",
+    "explanation": "Adding '!important' gives the declaration priority over normal specificity rules in the cascade, overriding other author styles."
+  },
+  {
+    "id": 487,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 3: CSS Selectors & Cascading",
+    "question": "Which pseudo-class applies when the user hovers a pointing device over an element without activating it?",
+    "options": [
+      "A) :focus",
+      "B) :hover",
+      "C) :active",
+      "D) :visited"
+    ],
+    "answer": "B",
+    "explanation": "The ':hover' CSS pseudo-class matches when the user interacts with an element with a pointing device (like hovering a mouse cursor over a button or link)."
+  },
+  {
+    "id": 488,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 3: CSS Selectors & Cascading",
+    "question": "What is the difference between a pseudo-class (e.g. :hover) and a pseudo-element (e.g. ::before)?",
+    "options": [
+      "A) Pseudo-classes select elements based on state; pseudo-elements style specific parts of an element or create virtual elements",
+      "B) Pseudo-elements are written with single colons only",
+      "C) Pseudo-classes only work on input fields",
+      "D) There is no distinction in CSS3"
+    ],
+    "answer": "A",
+    "explanation": "Pseudo-classes (:hover, :first-child, :checked) select elements based on state or DOM position. Pseudo-elements (::before, ::after, ::first-line) target sub-parts or generate decorative content."
+  },
+  {
+    "id": 489,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 3: CSS Selectors & Cascading",
+    "question": "What does the general sibling combinator '~' select in 'h1 ~ p'?",
+    "options": [
+      "A) All <p> elements that follow an <h1> element anywhere as siblings under the same parent",
+      "B) Only the immediate next sibling",
+      "C) All child paragraphs",
+      "D) Paragraphs with identical font size"
+    ],
+    "answer": "A",
+    "explanation": "The general sibling combinator '~' selects all subsequent siblings of an element that match the selector, not just the immediately adjacent one."
+  },
+  {
+    "id": 490,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 3: CSS Selectors & Cascading",
+    "question": "Which pseudo-class selects every odd row in a table body?",
+    "options": [
+      "A) tbody tr:nth-child(odd)",
+      "B) tbody tr:nth-row(1)",
+      "C) tbody tr:odd",
+      "D) tbody tr:first-child(2)"
+    ],
+    "answer": "A",
+    "explanation": "':nth-child(odd)' (or ':nth-child(2n+1)') targets all odd-numbered elements in a sequence, creating zebra-striped tables."
+  },
+  {
+    "module": "Module 3: CSS Selectors & Cascading",
+    "question": "What does the ':not()' pseudo-class do in CSS?",
+    "options": [
+      "A) Matches elements that do NOT match the specified selector: input:not([type=\"checkbox\"])",
+      "B) Disables CSS styles",
+      "C) Inverts the color palette",
+      "D) Hides elements from screen readers"
+    ],
+    "answer": "A",
+    "explanation": "The negation pseudo-class ':not(selector)' targets every element that does not match the selector passed as its parameter.",
+    "id": 491,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 3: CSS Selectors & Cascading",
+    "question": "How do you declare and consume a CSS Custom Property (CSS variable)?",
+    "options": [
+      "A) Declaration: --brand-color: #38bdf8; Consumption: color: var(--brand-color);",
+      "B) Declaration: $brand-color: #38bdf8; Consumption: color: $brand-color;",
+      "C) Declaration: @brand-color: #38bdf8; Consumption: color: @brand-color;",
+      "D) Declaration: &brand-color = #38bdf8; Consumption: color: get(&brand-color);"
+    ],
+    "answer": "A",
+    "explanation": "CSS variables are declared with two leading hyphens (e.g. '--main-color: blue;') and consumed using the 'var(--main-color)' function, cascading down the DOM hierarchy.",
+    "id": 492,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 3: CSS Selectors & Cascading",
+    "question": "What is the difference between ':is()' and ':where()' pseudo-classes regarding CSS specificity?",
+    "options": [
+      "A) ':is()' takes the specificity of its most specific argument; ':where()' always has a specificity score of 0",
+      "B) ':where()' has higher specificity than ':is()'",
+      "C) ':is()' cannot accept class selectors",
+      "D) There is no difference"
+    ],
+    "answer": "A",
+    "explanation": "Both :is() and :where() group selectors concisely, but :where() deliberately zeroes out specificity (0-0-0), making rules easier to override downstream.",
+    "id": 493,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 3: CSS Selectors & Cascading",
+    "question": "Which pseudo-element styles the portion of a document that has been selected/highlighted by the user?",
+    "options": [
+      "A) ::selection",
+      "B) ::highlight",
+      "C) ::active-text",
+      "D) ::selected"
+    ],
+    "answer": "A",
+    "explanation": "The '::selection' pseudo-element applies styles (such as background and color) to the portion of text that has been highlighted or selected by the user.",
+    "id": 494,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 3: CSS Selectors & Cascading",
+    "question": "Which selector matches any <button> element that has the 'disabled' attribute present, regardless of its value?",
+    "options": [
+      "A) button[disabled]",
+      "B) button:disabled-attribute",
+      "C) button.disabled()",
+      "D) button->disabled"
+    ],
+    "answer": "A",
+    "explanation": "'button[disabled]' matches any button with the attribute present. ':disabled' is also available as a pseudo-class for disabled form controls.",
+    "id": 495,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "id": 496,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 4: HTML5 Forms & Controls",
+    "question": "Which HTML5 input type automatically validates that the entered value conforms to an email address format upon form submission?",
+    "options": [
+      "A) <input type=\"mail\">",
+      "B) <input type=\"email\">",
+      "C) <input type=\"text\" validate=\"email\">",
+      "D) <input type=\"address\">"
+    ],
+    "answer": "B",
+    "explanation": "<input type=\"email\"> provides built-in browser validation, verifying that the input contains a valid email format, and displays an optimized email keyboard on mobile devices."
+  },
+  {
+    "id": 497,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 4: HTML5 Forms & Controls",
+    "question": "What attribute displays light grey hint text inside an input field that disappears when the user starts typing?",
+    "options": [
+      "A) value",
+      "B) placeholder",
+      "C) tooltip",
+      "D) hint"
+    ],
+    "answer": "B",
+    "explanation": "The 'placeholder' attribute specifies a short hint (such as a sample format) that describes the expected value of an input field before the user enters text."
+  },
+  {
+    "id": 498,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 4: HTML5 Forms & Controls",
+    "question": "Which boolean attribute prevents a form from being submitted if the input field is empty?",
+    "options": [
+      "A) validate",
+      "B) mandatory",
+      "C) required",
+      "D) notnull"
+    ],
+    "answer": "C",
+    "explanation": "The 'required' attribute specifies that an input field must be filled out before the browser permits the enclosing form to be submitted."
+  },
+  {
+    "id": 499,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 4: HTML5 Forms & Controls",
+    "question": "Which HTML5 element provides a predefined list of autocomplete options for an <input> element via its 'list' attribute?",
+    "options": [
+      "A) <select>",
+      "B) <datalist>",
+      "C) <autocomplete>",
+      "D) <optionlist>"
+    ],
+    "answer": "B",
+    "explanation": "The <datalist> tag contains <option> items that offer suggested autocomplete values for an associated <input list=\"id\"> without restricting the user from typing custom text."
+  },
+  {
+    "id": 500,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 4: HTML5 Forms & Controls",
+    "question": "Which input type provides a graphical slider control for selecting a numeric value within a range?",
+    "options": [
+      "A) <input type=\"slider\">",
+      "B) <input type=\"range\">",
+      "C) <input type=\"number\">",
+      "D) <input type=\"scroll\">"
+    ],
+    "answer": "B",
+    "explanation": "<input type=\"range\"> renders a visual slider bar control for choosing an imprecise numeric value between 'min' and 'max' bounds."
+  },
+  {
+    "id": 501,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 4: HTML5 Forms & Controls",
+    "question": "What attribute allows you to enforce a custom regular expression pattern on an <input> element?",
+    "options": [
+      "A) regex",
+      "B) pattern",
+      "C) match",
+      "D) validate"
+    ],
+    "answer": "B",
+    "explanation": "The 'pattern' attribute specifies a JavaScript regular expression that the input field's value must match against for the input to be considered valid upon submission."
+  },
+  {
+    "id": 502,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 4: HTML5 Forms & Controls",
+    "question": "Which attribute automatically focuses the cursor on a specified input field when the web page finishes loading?",
+    "options": [
+      "A) active",
+      "B) autofocus",
+      "C) focus-on-load",
+      "D) selected"
+    ],
+    "answer": "B",
+    "explanation": "The 'autofocus' boolean attribute automatically places the input cursor into the target element as soon as the page loads (only one element per page should have it)."
+  },
+  {
+    "id": 503,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 4: HTML5 Forms & Controls",
+    "question": "What input type renders a native date picker control allowing the user to select day, month, and year?",
+    "options": [
+      "A) <input type=\"calendar\">",
+      "B) <input type=\"date\">",
+      "C) <input type=\"datetime-local\">",
+      "D) <input type=\"time\">"
+    ],
+    "answer": "B",
+    "explanation": "<input type=\"date\"> displays a browser-native date picker widget for inputting dates formatted in the ISO YYYY-MM-DD standard."
+  },
+  {
+    "id": 504,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 4: HTML5 Forms & Controls",
+    "question": "What attributes define the minimum value, maximum value, and increment intervals for an <input type=\"number\">?",
+    "options": [
+      "A) low, high, and interval",
+      "B) min, max, and step",
+      "C) start, end, and skip",
+      "D) floor, ceiling, and delta"
+    ],
+    "answer": "B",
+    "explanation": "'min' defines the lower bound, 'max' defines the upper bound, and 'step' sets the legal numeric step interval (e.g. step=\"0.5\")."
+  },
+  {
+    "id": 505,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 4: HTML5 Forms & Controls",
+    "question": "Which attribute can be added to a <form> or submit button to bypass native HTML5 browser validation upon submit?",
+    "options": [
+      "A) novalidate (or formnovalidate)",
+      "B) skip-validation",
+      "C) disable-check",
+      "D) no-pattern"
+    ],
+    "answer": "A",
+    "explanation": "Adding 'novalidate' to the <form> element or 'formnovalidate' to a submit button instructs the browser to skip constraint validation when submitting the form."
+  },
+  {
+    "module": "Module 4: HTML5 Forms & Controls",
+    "question": "What input type provides an optimized virtual telephone keypad on mobile devices?",
+    "options": [
+      "A) <input type=\"tel\">",
+      "B) <input type=\"phone\">",
+      "C) <input type=\"mobile\">",
+      "D) <input type=\"digits\">"
+    ],
+    "answer": "A",
+    "explanation": "<input type=\"tel\"> designates a telephone number input and triggers a numeric telephone keypad on smartphones and mobile tablets.",
+    "id": 506,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 4: HTML5 Forms & Controls",
+    "question": "Which attribute on an <input type=\"file\"> allows users to select more than one file for upload?",
+    "options": [
+      "A) multiple",
+      "B) multi-select",
+      "C) allow-many",
+      "D) batch"
+    ],
+    "answer": "A",
+    "explanation": "The 'multiple' boolean attribute allows users to select multiple files in an input type=\"file\" or multiple options in a <select> element.",
+    "id": 507,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 4: HTML5 Forms & Controls",
+    "question": "Which input type renders a search text box that typically includes a clear (x) button?",
+    "options": [
+      "A) <input type=\"search\">",
+      "B) <input type=\"query\">",
+      "C) <input type=\"find\">",
+      "D) <input type=\"lookup\">"
+    ],
+    "answer": "A",
+    "explanation": "<input type=\"search\"> is styled specifically for search queries and frequently renders with an integrated 'x' clear button across browsers.",
+    "id": 508,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 4: HTML5 Forms & Controls",
+    "question": "How do you disable browser autocomplete suggestions on a specific form or input field?",
+    "options": [
+      "A) autocomplete=\"off\"",
+      "B) no-autocomplete",
+      "C) suggestions=\"disabled\"",
+      "D) disable-cache=\"true\""
+    ],
+    "answer": "A",
+    "explanation": "Setting 'autocomplete=\"off\"' on a <form> or <input> informs the browser not to suggest or auto-fill previous values entered by the user.",
+    "id": 509,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 4: HTML5 Forms & Controls",
+    "question": "Which attributes define the visible text dimensions of a '<textarea>' element?",
+    "options": [
+      "A) rows and cols",
+      "B) width and height",
+      "C) lines and characters",
+      "D) size and length"
+    ],
+    "answer": "A",
+    "explanation": "'rows' specifies the visible number of text lines, and 'cols' specifies the average visible character width of a <textarea>.",
+    "id": 510,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "id": 511,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 5: Form Validation & Accessibility",
+    "question": "How do you associate a <label> element with an <input> element so screen readers can identify it and clicking the label focuses the input?",
+    "options": [
+      "A) Set the label's 'for' attribute to match the input's 'id' attribute",
+      "B) Set the label's 'name' attribute to match the input's 'name'",
+      "C) Set the input's 'label' attribute to the label text",
+      "D) Place the label after the input tag with no attributes"
+    ],
+    "answer": "A",
+    "explanation": "The 'for' attribute of a <label> must match the unique 'id' of the corresponding input control: <label for=\"userEmail\">Email</label><input id=\"userEmail\">."
+  },
+  {
+    "id": 512,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 5: Form Validation & Accessibility",
+    "question": "Which CSS pseudo-class matches form input elements whose values satisfy all validation constraints?",
+    "options": [
+      "A) :correct",
+      "B) :valid",
+      "C) :success",
+      "D) :accepted"
+    ],
+    "answer": "B",
+    "explanation": "The ':valid' CSS pseudo-class matches any form control whose current contents pass all HTML5 constraint validations. ':invalid' matches elements failing validation."
+  },
+  {
+    "id": 513,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 5: Form Validation & Accessibility",
+    "question": "In the JavaScript Constraint Validation API, what method checks if an element satisfies its validity constraints without submitting the form?",
+    "options": [
+      "A) checkValidity()",
+      "B) testInput()",
+      "C) validateNow()",
+      "D) verifyRules()"
+    ],
+    "answer": "A",
+    "explanation": "inputElement.checkValidity() returns true if the element satisfies all validity constraints; if invalid, it fires an 'invalid' DOM event on the element and returns false."
+  },
+  {
+    "id": 514,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 5: Form Validation & Accessibility",
+    "question": "What JavaScript method sets a custom validation error message on a form control, marking it invalid?",
+    "options": [
+      "A) setErrorMessage()",
+      "B) setCustomValidity(message)",
+      "C) markInvalid(message)",
+      "D) addValidationError()"
+    ],
+    "answer": "B",
+    "explanation": "Calling 'setCustomValidity(\"Error text\")' marks the element as invalid and sets the error message displayed in the browser's tooltip. Passing an empty string '\"\"' marks it valid."
+  },
+  {
+    "id": 515,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 5: Form Validation & Accessibility",
+    "question": "Which property of the 'validity' object (input.validity) is true if an input fails its 'pattern' attribute regex?",
+    "options": [
+      "A) validity.typeMismatch",
+      "B) validity.patternMismatch",
+      "C) validity.rangeOverflow",
+      "D) validity.valueMissing"
+    ],
+    "answer": "B",
+    "explanation": "'validity.patternMismatch' is true when the input's value does not conform to the regular expression specified in the 'pattern' attribute."
+  },
+  {
+    "id": 516,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 5: Form Validation & Accessibility",
+    "question": "What does ARIA stand for in web accessibility?",
+    "options": [
+      "A) Accessible Rich Internet Applications",
+      "B) Advanced Responsive Interface Architecture",
+      "C) Automated Rendering Information API",
+      "D) Assistive Reader Integration Algorithm"
+    ],
+    "answer": "A",
+    "explanation": "W3C WAI-ARIA stands for Accessible Rich Internet Applications, defining roles, states, and properties (e.g. aria-required, aria-hidden) to make dynamic web content accessible."
+  },
+  {
+    "id": 517,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 5: Form Validation & Accessibility",
+    "question": "Which ARIA attribute informs screen readers that an input field is currently in an invalid state?",
+    "options": [
+      "A) aria-invalid=\"true\"",
+      "B) aria-error=\"active\"",
+      "C) aria-status=\"fail\"",
+      "D) aria-alert=\"yes\""
+    ],
+    "answer": "A",
+    "explanation": "'aria-invalid=\"true\"' announces to screen readers that the value entered into the form field does not conform to the expected format or rules."
+  },
+  {
+    "id": 518,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 5: Form Validation & Accessibility",
+    "question": "Which property on the validity object is true if a required field is left empty?",
+    "options": [
+      "A) validity.emptyField",
+      "B) validity.valueMissing",
+      "C) validity.noInput",
+      "D) validity.requiredError"
+    ],
+    "answer": "B",
+    "explanation": "'validity.valueMissing' is true when an element has the 'required' attribute but contains no user value upon validation."
+  },
+  {
+    "id": 519,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 5: Form Validation & Accessibility",
+    "question": "Why is client-side HTML5 validation NOT sufficient on its own for web security?",
+    "options": [
+      "A) Because client-side validation can be bypassed, disabled, or intercepted by attackers; all input MUST also be re-validated on the server",
+      "B) Because HTML5 validation only works on Chrome",
+      "C) Because regex slows down database queries",
+      "D) Because client validation drops SSL encryption"
+    ],
+    "answer": "A",
+    "explanation": "Client-side validation provides immediate, friendly user feedback but can easily be bypassed by manipulating HTTP requests or turning off scripts. Server-side validation is non-negotiable for security."
+  },
+  {
+    "id": 520,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 5: Form Validation & Accessibility",
+    "question": "What does the method reportValidity() do in modern browsers?",
+    "options": [
+      "A) Evaluates constraints, returns a boolean, AND displays the browser's native error bubble tooltip to the user if invalid",
+      "B) Sends an email report to the webmaster",
+      "C) Clears all invalid form fields",
+      "D) Logs validation statistics to Google Analytics"
+    ],
+    "answer": "A",
+    "explanation": "reportValidity() checks whether the element satisfies its constraints (returning true or false) and actively displays the browser's native validation popup message if invalid."
+  },
+  {
+    "module": "Module 5: Form Validation & Accessibility",
+    "question": "Which property of 'input.validity' is true if a user types non-numeric characters into an <input type=\"number\">?",
+    "options": [
+      "A) validity.badInput",
+      "B) validity.typeMismatch",
+      "C) validity.stepMismatch",
+      "D) validity.rangeUnderflow"
+    ],
+    "answer": "A",
+    "explanation": "'validity.badInput' is true when the browser cannot convert user input into the expected data type (such as entering letters into an input type=\"number\").",
+    "id": 521,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 5: Form Validation & Accessibility",
+    "question": "Which property of 'input.validity' is true if a custom validation error was set using setCustomValidity()?",
+    "options": [
+      "A) validity.customError",
+      "B) validity.customInvalid",
+      "C) validity.userError",
+      "D) validity.manualError"
+    ],
+    "answer": "A",
+    "explanation": "'validity.customError' returns true whenever setCustomValidity() was called with a non-empty error message string.",
+    "id": 522,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 5: Form Validation & Accessibility",
+    "question": "What is the difference between 'aria-live=\"polite\"' and 'aria-live=\"assertive\"'?",
+    "options": [
+      "A) 'polite' waits until the screen reader finishes speaking before announcing updates; 'assertive' interrupts current speech immediately to announce the dynamic change",
+      "B) 'polite' uses lower volume",
+      "C) 'assertive' plays an alarm sound",
+      "D) There is no difference"
+    ],
+    "answer": "A",
+    "explanation": "ARIA live regions notify screen readers of dynamic UI changes. 'polite' queues notifications until speech pauses; 'assertive' interrupts immediately for urgent alerts.",
+    "id": 523,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 5: Form Validation & Accessibility",
+    "question": "Which HTML elements should be used to group related form controls and assign a caption to the group for accessibility?",
+    "options": [
+      "A) <fieldset> and <legend>",
+      "B) <group> and <title>",
+      "C) <panel> and <header>",
+      "D) <div> and <span>"
+    ],
+    "answer": "A",
+    "explanation": "The <fieldset> element groups related form controls (like a group of radio buttons or address fields), and <legend> provides an accessible caption read by screen readers.",
+    "id": 524,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 5: Form Validation & Accessibility",
+    "question": "What CSS pseudo-class matches optional form inputs that do NOT have the 'required' attribute?",
+    "options": [
+      "A) :optional",
+      "B) :not-required",
+      "C) :arbitrary",
+      "D) :empty"
+    ],
+    "answer": "A",
+    "explanation": "The ':optional' pseudo-class matches any form control that does not have the 'required' attribute set.",
+    "id": 525,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "id": 526,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 6: JavaScript Fundamentals & DOM",
+    "question": "What is the modern standard method for selecting the FIRST element in the DOM matching a specified CSS selector string?",
+    "options": [
+      "A) document.querySelector(selector)",
+      "B) document.querySelectorAll(selector)",
+      "C) document.getElementBySelector(selector)",
+      "D) document.findFirst(selector)"
+    ],
+    "answer": "A",
+    "explanation": "document.querySelector(selector) returns the first Element that matches the specified CSS selector group, or null if no matches are found."
+  },
+  {
+    "id": 527,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 6: JavaScript Fundamentals & DOM",
+    "question": "What does document.querySelectorAll(selector) return?",
+    "options": [
+      "A) A static NodeList containing all matching Element nodes",
+      "B) A live HTMLCollection that updates dynamically",
+      "C) A JavaScript Array with map and filter methods",
+      "D) A JSON string of attributes"
+    ],
+    "answer": "A",
+    "explanation": "querySelectorAll returns a static (non-live) NodeList representing a snapshot of all elements in the document matching the given CSS selectors."
+  },
+  {
+    "id": 528,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 6: JavaScript Fundamentals & DOM",
+    "question": "What is the key difference between 'let' and 'var' declarations in JavaScript?",
+    "options": [
+      "A) 'let' is block-scoped and not hoisted with initialization; 'var' is function-scoped and hoisted with undefined",
+      "B) 'let' variables cannot be reassigned",
+      "C) 'var' cannot be used inside loops",
+      "D) 'let' is only supported in Node.js"
+    ],
+    "answer": "A",
+    "explanation": "'let' provides block scoping (confined within '{ ... }' blocks) and enforces a Temporal Dead Zone (TDZ). 'var' is hoisted to the top of its enclosing function scope and defaults to undefined."
+  },
+  {
+    "id": 529,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 6: JavaScript Fundamentals & DOM",
+    "question": "Which property is safest to use when inserting user-provided text into a DOM element to prevent Cross-Site Scripting (XSS)?",
+    "options": [
+      "A) innerHTML",
+      "B) textContent",
+      "C) outerHTML",
+      "D) document.write()"
+    ],
+    "answer": "B",
+    "explanation": "textContent inserts text as raw text without parsing it as HTML markup, safely escaping characters like '<' and '&' and preventing script injection."
+  },
+  {
+    "id": 530,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 6: JavaScript Fundamentals & DOM",
+    "question": "How do you add a CSS class 'highlight' to an element using modern DOM methods?",
+    "options": [
+      "A) element.classList.add('highlight');",
+      "B) element.className += ' highlight';",
+      "C) element.addClass('highlight');",
+      "D) element.style.class = 'highlight';"
+    ],
+    "answer": "A",
+    "explanation": "The 'element.classList' API provides clean, standardized methods: add(), remove(), toggle(), and contains() for managing CSS classes without manual string manipulation."
+  },
+  {
+    "id": 531,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 6: JavaScript Fundamentals & DOM",
+    "question": "What method creates a new HTML element node in memory before appending it to the DOM tree?",
+    "options": [
+      "A) document.createElement('tagName')",
+      "B) document.newElement('tagName')",
+      "C) document.buildNode('tagName')",
+      "D) window.makeElement('tagName')"
+    ],
+    "answer": "A",
+    "explanation": "document.createElement(tagName) creates the HTML element specified by tagName, ready to have attributes set and be attached to the tree via appendChild() or append()."
+  },
+  {
+    "id": 532,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 6: JavaScript Fundamentals & DOM",
+    "question": "What does the strict equality operator '===' compare in JavaScript?",
+    "options": [
+      "A) Compares both value and type without performing implicit type coercion",
+      "B) Converts types automatically before comparing",
+      "C) Compares only object memory addresses",
+      "D) Always returns false for strings"
+    ],
+    "answer": "A",
+    "explanation": "The strict equality operator '===' evaluates both value and data type without type conversion. (e.g. 5 === '5' is false, whereas 5 == '5' is true)."
+  },
+  {
+    "id": 533,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 6: JavaScript Fundamentals & DOM",
+    "question": "What method removes a child element from its parent node in the DOM?",
+    "options": [
+      "A) parentNode.removeChild(childNode)",
+      "B) document.delete(childNode)",
+      "C) childNode.destroy()",
+      "D) parentNode.detach(childNode)"
+    ],
+    "answer": "A",
+    "explanation": "parentNode.removeChild(childNode) removes the specified child node from the DOM tree and returns the removed node."
+  },
+  {
+    "id": 534,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 6: JavaScript Fundamentals & DOM",
+    "question": "What happens when declaring a variable with 'const' in JavaScript?",
+    "options": [
+      "A) The variable binding cannot be reassigned after initialization",
+      "B) The properties of an object assigned to const are completely immutable and frozen",
+      "C) It can only hold primitive numbers",
+      "D) It can be declared without an initial value"
+    ],
+    "answer": "A",
+    "explanation": "'const' creates an immutable variable binding (it cannot be reassigned with '='). However, if the value is an object or array, its internal properties or items can still be mutated."
+  },
+  {
+    "id": 535,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 6: JavaScript Fundamentals & DOM",
+    "question": "How do you set an inline style property (e.g. color to blue) on a DOM element in JavaScript?",
+    "options": [
+      "A) element.style.color = 'blue';",
+      "B) element.css('color', 'blue');",
+      "C) element.setAttribute('style-color', 'blue');",
+      "D) element.color = 'blue';"
+    ],
+    "answer": "A",
+    "explanation": "Inline styles are set via the 'element.style' object using camelCase property names (e.g. element.style.color = 'blue'; element.style.backgroundColor = 'red')."
+  },
+  {
+    "module": "Module 6: JavaScript Fundamentals & DOM",
+    "question": "How does the 'this' keyword behave inside an ES6 Arrow Function '() => {}' compared to a standard function?",
+    "options": [
+      "A) Arrow functions do not bind their own 'this'; they inherit 'this' lexically from their enclosing execution context",
+      "B) 'this' in arrow functions always refers to the window object",
+      "C) Arrow functions cannot use 'this'",
+      "D) 'this' refers to the calling button"
+    ],
+    "answer": "A",
+    "explanation": "Arrow functions capture the 'this' value of the enclosing lexical scope at the time they are created, eliminating issues where callback functions lose outer context.",
+    "id": 536,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 6: JavaScript Fundamentals & DOM",
+    "question": "How do you access custom data attributes (e.g. '<div data-user-id=\"42\">') on an element in JavaScript?",
+    "options": [
+      "A) element.dataset.userId",
+      "B) element.data.userId",
+      "C) element.customData('userId')",
+      "D) element.attributes.userId"
+    ],
+    "answer": "A",
+    "explanation": "The 'dataset' property exposes all 'data-*' attributes on the element in camelCase: 'data-user-id' becomes accessible via 'element.dataset.userId'.",
+    "id": 537,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 6: JavaScript Fundamentals & DOM",
+    "question": "Which DOM method traverses UP the tree from the current element to find the closest ancestor matching a CSS selector?",
+    "options": [
+      "A) element.closest(selector)",
+      "B) element.findParent(selector)",
+      "C) element.parentElementMatching(selector)",
+      "D) element.up(selector)"
+    ],
+    "answer": "A",
+    "explanation": "'element.closest(selector)' inspects the current element and traverses up through its ancestors, returning the first element that matches the specified selector, or null.",
+    "id": 538,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 6: JavaScript Fundamentals & DOM",
+    "question": "Which array method transforms each element in an array and returns a new array with the mapped results?",
+    "options": [
+      "A) Array.prototype.map()",
+      "B) Array.prototype.forEach()",
+      "C) Array.prototype.filter()",
+      "D) Array.prototype.reduce()"
+    ],
+    "answer": "A",
+    "explanation": "map() calls a provided callback function once for each element in an array and constructs a new array from the returned values.",
+    "id": 539,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 6: JavaScript Fundamentals & DOM",
+    "question": "What feature in ES6 allows embedding expressions and multi-line strings using backticks (`` ` ``)?",
+    "options": [
+      "A) Template Literals",
+      "B) String Formatters",
+      "C) Interpolated Text",
+      "D) Dynamic Strings"
+    ],
+    "answer": "A",
+    "explanation": "Template literals (enclosed in backticks) support multi-line strings and string interpolation with embedded expressions: `${expression}`.",
+    "id": 540,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "id": 541,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 7: DOM Event Handling",
+    "question": "What standard method registers an event handler function on a DOM element?",
+    "options": [
+      "A) element.addEventListener('click', handler);",
+      "B) element.attachEvent('onclick', handler);",
+      "C) element.registerEvent('click', handler);",
+      "D) element.bind('click', handler);"
+    ],
+    "answer": "A",
+    "explanation": "addEventListener(type, listener [, options]) is the standard W3C method for attaching an event listener to a target DOM node without overwriting existing listeners."
+  },
+  {
+    "id": 542,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 7: DOM Event Handling",
+    "question": "What are the three sequential phases of DOM event propagation?",
+    "options": [
+      "A) Capturing phase -> Target phase -> Bubbling phase",
+      "B) Bubbling phase -> Target phase -> Capturing phase",
+      "C) Capture phase -> Commit phase -> Render phase",
+      "D) Dispatch phase -> Execute phase -> Dispose phase"
+    ],
+    "answer": "A",
+    "explanation": "Event flow travels: 1. Capturing phase (traveling down from Window to the target), 2. Target phase (executing on the target element), 3. Bubbling phase (traveling up from target back to Window)."
+  },
+  {
+    "id": 543,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 7: DOM Event Handling",
+    "question": "What method prevents the browser's default action associated with an event (such as navigating when clicking a link or submitting a form)?",
+    "options": [
+      "A) event.preventDefault()",
+      "B) event.stopPropagation()",
+      "C) event.cancelBubble()",
+      "D) event.halt()"
+    ],
+    "answer": "A",
+    "explanation": "event.preventDefault() cancels the default behavior of the event without stopping its propagation along the DOM tree."
+  },
+  {
+    "id": 544,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 7: DOM Event Handling",
+    "question": "What method stops an event from bubbling or capturing further up or down the DOM hierarchy?",
+    "options": [
+      "A) event.stopPropagation()",
+      "B) event.preventDefault()",
+      "C) event.exit()",
+      "D) event.terminate()"
+    ],
+    "answer": "A",
+    "explanation": "event.stopPropagation() prevents further propagation of the current event in the capturing and bubbling phases."
+  },
+  {
+    "id": 545,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 7: DOM Event Handling",
+    "question": "What is the difference between 'event.target' and 'event.currentTarget' inside an event handler?",
+    "options": [
+      "A) event.target is the element that actually triggered the event; event.currentTarget is the element to which the event handler is currently attached",
+      "B) event.target is always the document window",
+      "C) event.currentTarget is the next element in the DOM",
+      "D) There is no difference"
+    ],
+    "answer": "A",
+    "explanation": "event.target refers to the innermost element where the event originated (e.g. a clicked button). event.currentTarget refers to the element that currently owns the active event listener."
+  },
+  {
+    "id": 546,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 7: DOM Event Handling",
+    "question": "What is 'Event Delegation' in JavaScript?",
+    "options": [
+      "A) Attaching a single event listener to a common parent element to handle events for all current and future child elements by leveraging event bubbling",
+      "B) Handing off event processing to a background server thread",
+      "C) Cloning event handlers to every element on the page",
+      "D) Using setTimeout to delay event execution"
+    ],
+    "answer": "A",
+    "explanation": "Event delegation is a design pattern where an event listener is placed on a parent container to manage events triggered by any descendant, relying on bubbling and event.target."
+  },
+  {
+    "id": 547,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 7: DOM Event Handling",
+    "question": "How do you configure an event listener to execute during the CAPTURING phase instead of the default bubbling phase?",
+    "options": [
+      "A) Pass true (or { capture: true }) as the third argument to addEventListener",
+      "B) Prefix the event name with 'capture:'",
+      "C) Use element.captureEventListener()",
+      "D) Set event.phase = 'capturing'"
+    ],
+    "answer": "A",
+    "explanation": "The third argument of addEventListener specifies options or 'useCapture'. Passing 'true' (or '{ capture: true }') causes the handler to fire during the capture phase."
+  },
+  {
+    "id": 548,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 7: DOM Event Handling",
+    "question": "Which event fires when the initial HTML document has been completely parsed and DOM tree built, without waiting for stylesheets and images to finish loading?",
+    "options": [
+      "A) DOMContentLoaded",
+      "B) load",
+      "C) readystatechange",
+      "D) init"
+    ],
+    "answer": "A",
+    "explanation": "'DOMContentLoaded' fires as soon as the DOM tree is constructed. The 'load' event fires later, once all stylesheets, images, and sub-resources have completely finished downloading."
+  },
+  {
+    "id": 549,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 7: DOM Event Handling",
+    "question": "What method removes an event listener previously added with addEventListener?",
+    "options": [
+      "A) element.removeEventListener(type, handler);",
+      "B) element.detachEvent(type, handler);",
+      "C) element.deleteEventListener(type);",
+      "D) element.unbind(type);"
+    ],
+    "answer": "A",
+    "explanation": "removeEventListener(type, handler) detaches the listener. It requires an exact reference to the original function handler (anonymous functions cannot be detached this way)."
+  },
+  {
+    "id": 550,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 7: DOM Event Handling",
+    "question": "What method stops the event immediately and prevents ANY other listeners on the same element from being executed?",
+    "options": [
+      "A) event.stopImmediatePropagation()",
+      "B) event.stopPropagation()",
+      "C) event.preventDefault()",
+      "D) event.break()"
+    ],
+    "answer": "A",
+    "explanation": "event.stopImmediatePropagation() stops the event propagation to parent elements AND prevents any remaining event listeners registered on the same element from being invoked."
+  },
+  {
+    "module": "Module 7: DOM Event Handling",
+    "question": "How do you create and dispatch a custom event with custom data in modern JavaScript?",
+    "options": [
+      "A) const ev = new CustomEvent('userLogin', { detail: { id: 10 } }); element.dispatchEvent(ev);",
+      "B) element.fireEvent('userLogin', { id: 10 });",
+      "C) document.trigger('userLogin', 10);",
+      "D) window.broadcast('userLogin', 10);"
+    ],
+    "answer": "A",
+    "explanation": "'new CustomEvent(name, { detail: data })' initializes a custom event. Calling 'element.dispatchEvent(event)' fires the event through standard DOM event propagation.",
+    "id": 551,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 7: DOM Event Handling",
+    "question": "What does the option '{ once: true }' do when passed to addEventListener?",
+    "options": [
+      "A) Automatically removes the event listener after it is triggered the first time",
+      "B) Prevents other listeners from firing",
+      "C) Limits the page to one click per second",
+      "D) Disables event bubbling"
+    ],
+    "answer": "A",
+    "explanation": "Passing '{ once: true }' in the addEventListener options object causes the listener to be invoked at most once and then automatically detached.",
+    "id": 552,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 7: DOM Event Handling",
+    "question": "What is the benefit of passing '{ passive: true }' to touch or scroll event listeners?",
+    "options": [
+      "A) Informs the browser that the handler will NEVER call preventDefault(), allowing the browser to scroll smoothly on the compositor thread without waiting for JS execution",
+      "B) Delays execution of the event handler",
+      "C) Makes touch events work with a mouse",
+      "D) Prevents CPU sleep"
+    ],
+    "answer": "A",
+    "explanation": "Passive event listeners promise that preventDefault() will not be called, enabling browser rendering engines to perform butter-smooth scrolling and touch interactions asynchronously.",
+    "id": 553,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 7: DOM Event Handling",
+    "question": "What method returns the array of all DOM elements traversed by an event during propagation?",
+    "options": [
+      "A) event.composedPath()",
+      "B) event.path",
+      "C) event.getElements()",
+      "D) event.ancestorList()"
+    ],
+    "answer": "A",
+    "explanation": "'event.composedPath()' returns the event's path as an array of EventTarget objects through which the event bubbles, from source to Window.",
+    "id": 554,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 7: DOM Event Handling",
+    "question": "What is 'Debouncing' an event handler (such as a search input or window resize listener)?",
+    "options": [
+      "A) Delaying the execution of a function until a specified idle duration has elapsed since the last time the event was triggered",
+      "B) Running the function at regular intervals",
+      "C) Canceling the event permanently",
+      "D) Disabling keyboard input"
+    ],
+    "answer": "A",
+    "explanation": "Debouncing ensures that a function is not executed until a quiet period has passed since the last event invocation, preventing costly repetitive operations during rapid typing or resizing.",
+    "id": 555,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "id": 556,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 8: CSS3 Box Model & Layout",
+    "question": "What are the four components of the standard CSS Box Model from inside out?",
+    "options": [
+      "A) Content -> Padding -> Border -> Margin",
+      "B) Content -> Margin -> Border -> Padding",
+      "C) Margin -> Border -> Padding -> Content",
+      "D) Content -> Outline -> Border -> Margin"
+    ],
+    "answer": "A",
+    "explanation": "From innermost to outermost, the CSS box model consists of: Content area, Padding (space around content), Border (around padding), and Margin (clearance outside border)."
+  },
+  {
+    "id": 557,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 8: CSS3 Box Model & Layout",
+    "question": "What does the CSS property 'box-sizing: border-box' do?",
+    "options": [
+      "A) Includes padding and border within the specified element's total width and height calculations",
+      "B) Adds a 3D border around the box",
+      "C) Forces the element to render as a table cell",
+      "D) Removes all margins from the element"
+    ],
+    "answer": "A",
+    "explanation": "With 'border-box', an element's declared width and height include both content, padding, and border, preventing layout breakage when adding padding or borders."
+  },
+  {
+    "id": 558,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 8: CSS3 Box Model & Layout",
+    "question": "Which CSS display property turns a container into a flexible flexbox layout context?",
+    "options": [
+      "A) display: flex;",
+      "B) display: flexbox;",
+      "C) flex-container: true;",
+      "D) display: grid-flex;"
+    ],
+    "answer": "A",
+    "explanation": "'display: flex' creates a flex container, establishing a flex formatting context for all its direct children."
+  },
+  {
+    "id": 559,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 8: CSS3 Box Model & Layout",
+    "question": "In CSS Flexbox, which property aligns flex items along the MAIN axis?",
+    "options": [
+      "A) justify-content",
+      "B) align-items",
+      "C) align-content",
+      "D) flex-direction"
+    ],
+    "answer": "A",
+    "explanation": "'justify-content' aligns flex items along the main axis (e.g. flex-start, center, space-between, space-around). 'align-items' aligns items along the cross axis."
+  },
+  {
+    "id": 560,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 8: CSS3 Box Model & Layout",
+    "question": "Which CSS property rounds the outer corners of an element's border?",
+    "options": [
+      "A) border-radius",
+      "B) corner-curve",
+      "C) border-curve",
+      "D) box-round"
+    ],
+    "answer": "A",
+    "explanation": "'border-radius' specifies the radius of the element's corners, allowing rounded corners or pill/circular shapes (e.g. border-radius: 50%)."
+  },
+  {
+    "id": 561,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 8: CSS3 Box Model & Layout",
+    "question": "What is the difference between 'display: none' and 'visibility: hidden'?",
+    "options": [
+      "A) 'display: none' removes the element entirely from document flow; 'visibility: hidden' hides the element while still reserving its physical space in layout",
+      "B) 'visibility: hidden' removes the element from the DOM",
+      "C) 'display: none' only hides background colors",
+      "D) There is no difference"
+    ],
+    "answer": "A",
+    "explanation": "'display: none' causes the element not to be rendered at all, taking 0 space. 'visibility: hidden' makes the element invisible, but preserves its width and height in the layout flow."
+  },
+  {
+    "id": 562,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 8: CSS3 Box Model & Layout",
+    "question": "In Flexbox, which property controls whether flex items are forced onto a single line or can wrap onto multiple lines?",
+    "options": [
+      "A) flex-wrap",
+      "B) flex-flow",
+      "C) line-wrap",
+      "D) white-space"
+    ],
+    "answer": "A",
+    "explanation": "'flex-wrap: wrap' allows flex items to wrap onto multiple lines as needed, instead of shrinking to fit on a single line (nowrap)."
+  },
+  {
+    "id": 563,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 8: CSS3 Box Model & Layout",
+    "question": "Which CSS property defines the transition animation between different property states?",
+    "options": [
+      "A) transition",
+      "B) transform",
+      "C) keyframe",
+      "D) morph"
+    ],
+    "answer": "A",
+    "explanation": "The 'transition' shorthand property specifies the CSS property to animate, duration, timing function, and delay (e.g. transition: all 0.3s ease-in-out)."
+  },
+  {
+    "id": 564,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 8: CSS3 Box Model & Layout",
+    "question": "What CSS property applies 2D or 3D transformations like rotating, scaling, or skewing an element?",
+    "options": [
+      "A) transform (e.g. transform: rotate(45deg);)",
+      "B) transition",
+      "C) animation",
+      "D) perspective"
+    ],
+    "answer": "A",
+    "explanation": "The 'transform' property modifies the visual rendering of an element (rotate, scale, translate, skew) without affecting the normal document flow."
+  },
+  {
+    "id": 565,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 8: CSS3 Box Model & Layout",
+    "question": "What CSS property adds shadow effects around an element's frame?",
+    "options": [
+      "A) box-shadow",
+      "B) text-shadow",
+      "C) element-shadow",
+      "D) border-shadow"
+    ],
+    "answer": "A",
+    "explanation": "'box-shadow' adds shadow effects around an element's box using offset-x, offset-y, blur-radius, spread-radius, and color."
+  },
+  {
+    "module": "Module 8: CSS3 Box Model & Layout",
+    "question": "Which CSS Grid declaration creates responsive columns that automatically fit as many minimum 250px columns as possible into the container?",
+    "options": [
+      "A) grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));",
+      "B) grid-columns: auto 250px;",
+      "C) display: grid-responsive(250px);",
+      "D) grid-template-columns: fit(250px);"
+    ],
+    "answer": "A",
+    "explanation": "'repeat(auto-fit, minmax(250px, 1fr))' generates an adaptive grid layout that fits as many columns of at least 250px into the available space, expanding them to fill remaining room.",
+    "id": 566,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 8: CSS3 Box Model & Layout",
+    "question": "What is the CSS 'gap' property used for in Flexbox and Grid containers?",
+    "options": [
+      "A) Defines the spacing (gutters) between grid cells or flex items without applying margin to outer edges",
+      "B) Sets empty space around the outside of the page",
+      "C) Creates holes inside text",
+      "D) Sets font letter spacing"
+    ],
+    "answer": "A",
+    "explanation": "The 'gap' (row-gap and column-gap) property sets gutter spacing between adjacent flex or grid items, replacing hacky margin offsets.",
+    "id": 567,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 8: CSS3 Box Model & Layout",
+    "question": "What is a Stacking Context in CSS?",
+    "options": [
+      "A) A 3D conceptualization of HTML elements along an imaginary Z-axis, determining which elements visually overlap in front of others",
+      "B) The order of CSS stylesheets in <head>",
+      "C) A JavaScript call stack",
+      "D) A flexbox direction model"
+    ],
+    "answer": "A",
+    "explanation": "Stacking contexts manage element layering on the z-axis. They are formed by conditions like position (relative/absolute) with z-index, opacity < 1, transform, or filter.",
+    "id": 568,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 8: CSS3 Box Model & Layout",
+    "question": "Which CSS at-rule is used to define keyframe stages in CSS animations?",
+    "options": [
+      "A) @keyframes animationName { 0% { ... } 100% { ... } }",
+      "B) @animation animationName { ... }",
+      "C) @frames animationName { ... }",
+      "D) @transitions animationName { ... }"
+    ],
+    "answer": "A",
+    "explanation": "The '@keyframes' rule defines the CSS properties that change over the course of an animation cycle using percentage markers (0% to 100% or from/to).",
+    "id": 569,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 8: CSS3 Box Model & Layout",
+    "question": "What is the default value of the CSS 'position' property?",
+    "options": [
+      "A) static",
+      "B) relative",
+      "C) absolute",
+      "D) fixed"
+    ],
+    "answer": "A",
+    "explanation": "'static' is the default CSS positioning. Static elements render in normal document flow and ignore top, right, bottom, left, and z-index properties.",
+    "id": 570,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "id": 571,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 9: Responsive Web Design",
+    "question": "What is the purpose of the viewport meta tag '<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">'?",
+    "options": [
+      "A) Sets the viewport width to match the device's physical screen width and establishes an initial 1:1 zoom ratio on mobile browsers",
+      "B) Forces desktop monitor dimensions on smartphones",
+      "C) Prevents users from scrolling",
+      "D) Enables offline website caching"
+    ],
+    "answer": "A",
+    "explanation": "The viewport meta tag instructs mobile browsers to render the page at the screen's actual device width and scale it 100%, preventing mobile browsers from shrinking pages down as if on desktop."
+  },
+  {
+    "id": 572,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 9: Responsive Web Design",
+    "question": "Which CSS at-rule is used to apply style blocks only when specified device criteria (like screen width or orientation) are met?",
+    "options": [
+      "A) @media",
+      "B) @responsive",
+      "C) @device",
+      "D) @screen"
+    ],
+    "answer": "A",
+    "explanation": "The '@media' rule declares media queries, conditionally applying CSS rules based on features like min-width, max-width, resolution, or orientation."
+  },
+  {
+    "id": 573,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 9: Responsive Web Design",
+    "question": "What does the media query '@media screen and (max-width: 768px)' target?",
+    "options": [
+      "A) Screens with a viewport width of 768 pixels or narrower (typically tablets and mobile phones)",
+      "B) Screens wider than 768 pixels only",
+      "C) Printers printing pages under 768mm wide",
+      "D) Screens with exactly 768 physical pixels"
+    ],
+    "answer": "A",
+    "explanation": "'(max-width: 768px)' activates the enclosed styles only when the viewport width is less than or equal to 768 pixels."
+  },
+  {
+    "id": 574,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 9: Responsive Web Design",
+    "question": "What is the 'Mobile-First' responsive design approach?",
+    "options": [
+      "A) Designing base CSS styles for mobile viewports first, using min-width media queries to progressively enhance the layout for larger tablet and desktop screens",
+      "B) Designing only for smartphones and ignoring desktop computers",
+      "C) Writing native iOS Objective-C code before HTML",
+      "D) Compressing all images to under 10 KB"
+    ],
+    "answer": "A",
+    "explanation": "Mobile-first establishes base default styles for small screens without media queries, then uses progressive '@media (min-width: ...)' queries to enhance layouts for larger displays."
+  },
+  {
+    "id": 575,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 9: Responsive Web Design",
+    "question": "What is the difference between 'rem' and 'em' units in CSS typography?",
+    "options": [
+      "A) 'rem' is relative to the root <html> font size; 'em' is relative to the font size of the immediate parent element",
+      "B) 'rem' is absolute pixels; 'em' is relative",
+      "C) 'em' is relative to the root; 'rem' is relative to parent",
+      "D) There is no difference"
+    ],
+    "answer": "A",
+    "explanation": "'rem' (root em) always scales relative to the root <html> element's font size (preventing compounding issues). 'em' scales relative to the immediate element's inherited parent font-size."
+  },
+  {
+    "id": 576,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 9: Responsive Web Design",
+    "question": "What do the viewport units 'vw' and 'vh' represent?",
+    "options": [
+      "A) 1% of the viewport width and 1% of the viewport height, respectively",
+      "B) Virtual width and virtual height in pixels",
+      "C) Vector weight and vector hue",
+      "D) Video window measurements"
+    ],
+    "answer": "A",
+    "explanation": "'1vw' equals 1% of the width of the current viewport, and '1vh' equals 1% of the height of the current viewport."
+  },
+  {
+    "id": 577,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 9: Responsive Web Design",
+    "question": "Which media type targets content specifically when being printed or formatted in print preview?",
+    "options": [
+      "A) @media print",
+      "B) @media paper",
+      "C) @media printer",
+      "D) @media hardcopy"
+    ],
+    "answer": "A",
+    "explanation": "'@media print' applies styles specifically for printing (such as hiding navigation bars, switching backgrounds to white, and displaying link URLs)."
+  },
+  {
+    "id": 578,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 9: Responsive Web Design",
+    "question": "How do you make an image responsive so that it never overflows its container but preserves its aspect ratio?",
+    "options": [
+      "A) img { max-width: 100%; height: auto; }",
+      "B) img { width: 100vw; height: 100vh; }",
+      "C) img { width: auto; height: 100%; }",
+      "D) img { resize: both; }"
+    ],
+    "answer": "A",
+    "explanation": "Setting 'max-width: 100%; height: auto;' ensures the image scales down proportionally if its container shrinks, without stretching or exceeding container bounds."
+  },
+  {
+    "id": 579,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 9: Responsive Web Design",
+    "question": "What media feature detects whether a device is in landscape or portrait orientation?",
+    "options": [
+      "A) orientation (e.g. @media (orientation: landscape))",
+      "B) device-aspect",
+      "C) screen-direction",
+      "D) rotation"
+    ],
+    "answer": "A",
+    "explanation": "The 'orientation' media feature matches based on whether the viewport width is greater than its height ('landscape') or height is greater than or equal to width ('portrait')."
+  },
+  {
+    "id": 580,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 9: Responsive Web Design",
+    "question": "What are 'Breakpoints' in responsive web design?",
+    "options": [
+      "A) Specific viewport widths (e.g. 576px, 768px, 992px, 1200px) where the layout reorganizes via media queries for optimal viewing",
+      "B) Points in JavaScript where the debugger pauses",
+      "C) Network disconnection points",
+      "D) Page load time timeouts"
+    ],
+    "answer": "A",
+    "explanation": "Breakpoints are predefined screen width thresholds where media query rules alter navigation, columns, or font sizing to optimize UX across different device classes."
+  },
+  {
+    "module": "Module 9: Responsive Web Design",
+    "question": "Which media query feature detects whether the operating system is set to Dark Mode?",
+    "options": [
+      "A) @media (prefers-color-scheme: dark)",
+      "B) @media (theme: dark)",
+      "C) @media (color-mode: night)",
+      "D) @media (os-appearance: dark)"
+    ],
+    "answer": "A",
+    "explanation": "'prefers-color-scheme: dark' is a CSS media feature that matches when the user's operating system or browser theme is configured for dark appearance.",
+    "id": 581,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 9: Responsive Web Design",
+    "question": "What does the CSS feature query '@supports (display: grid)' do?",
+    "options": [
+      "A) Conditionally applies CSS blocks only if the user's browser supports the specified CSS property/value pair",
+      "B) Downloads polyfills automatically",
+      "C) Submits browser bug reports",
+      "D) Checks operating system specs"
+    ],
+    "answer": "A",
+    "explanation": "The '@supports' at-rule provides native CSS feature detection, applying styles only if the browser engine supports the queried CSS capability.",
+    "id": 582,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 9: Responsive Web Design",
+    "question": "Which HTML5 element provides art direction by allowing multiple '<source>' elements with media queries for different image crops on mobile vs desktop?",
+    "options": [
+      "A) <picture>",
+      "B) <responsive-image>",
+      "C) <gallery>",
+      "D) <canvas>"
+    ],
+    "answer": "A",
+    "explanation": "The <picture> element wraps multiple <source media=\"...\"> definitions alongside a fallback <img>, enabling the browser to pick optimal image crops for varying device viewports.",
+    "id": 583,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 9: Responsive Web Design",
+    "question": "What does the CSS 'clamp(1rem, 2.5vw, 2rem)' function achieve for fluid responsive font sizing?",
+    "options": [
+      "A) Sets a preferred fluid size (2.5vw) while enforcing an absolute minimum of 1rem and an absolute maximum of 2rem",
+      "B) Sets three font sizes for small, medium, and large screens",
+      "C) Rounds font sizes to nearest integers",
+      "D) Restricts font weight"
+    ],
+    "answer": "A",
+    "explanation": "'clamp(min, val, max)' restricts a value between lower and upper bounds, popular for fluid typography that scales smoothly with viewport width without growing too large or small.",
+    "id": 584,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 9: Responsive Web Design",
+    "question": "Why should media queries in a Mobile-First responsive stylesheet primarily use 'min-width' rather than 'max-width'?",
+    "options": [
+      "A) Because base styles target small screens, and 'min-width' progressively applies rules as screen space expands without needing style resets",
+      "B) 'max-width' is deprecated in CSS3",
+      "C) 'min-width' loads faster on 4G networks",
+      "D) 'min-width' disables desktop monitors"
+    ],
+    "answer": "A",
+    "explanation": "Mobile-first sets baseline mobile styles cleanly, using progressive 'min-width' queries to layer layout enhancements as viewport width increases without overriding mobile rules.",
+    "id": 585,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "id": 586,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 10: Drag & Drop and Geolocation",
+    "question": "What attribute must be added to an HTML element to make it draggable using the HTML5 Drag and Drop API?",
+    "options": [
+      "A) draggable=\"true\"",
+      "B) drag=\"enabled\"",
+      "C) movable=\"true\"",
+      "D) allow-drag=\"yes\""
+    ],
+    "answer": "A",
+    "explanation": "Setting 'draggable=\"true\"' on an element enables the native HTML5 Drag and Drop capabilities for that element."
+  },
+  {
+    "id": 587,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 10: Drag & Drop and Geolocation",
+    "question": "Which event fires on the element being dragged as soon as the user starts dragging it?",
+    "options": [
+      "A) dragstart",
+      "B) dragenter",
+      "C) draginit",
+      "D) dragbegin"
+    ],
+    "answer": "A",
+    "explanation": "'dragstart' fires on the source element when dragging begins, typically used to initialize data via the dataTransfer object."
+  },
+  {
+    "id": 588,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 10: Drag & Drop and Geolocation",
+    "question": "What MUST be done in the 'dragover' event handler on a drop target to allow elements to be dropped onto it?",
+    "options": [
+      "A) Call event.preventDefault()",
+      "B) Call event.stopPropagation()",
+      "C) Return true",
+      "D) Set target.allowDrop = true"
+    ],
+    "answer": "A",
+    "explanation": "By default, browsers reject drops on elements. Calling 'event.preventDefault()' in the 'dragover' event listener overrides this default behavior and designates the element as a valid drop zone."
+  },
+  {
+    "id": 589,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 10: Drag & Drop and Geolocation",
+    "question": "Which object on the drag event is used to hold and retrieve data transferred during drag operations?",
+    "options": [
+      "A) event.dataTransfer",
+      "B) event.clipboardData",
+      "C) event.dragPayload",
+      "D) window.dragStore"
+    ],
+    "answer": "A",
+    "explanation": "The 'event.dataTransfer' object stores the payload during drag operations via setData(format, data) and retrieves it in the drop event via getData(format)."
+  },
+  {
+    "id": 590,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 10: Drag & Drop and Geolocation",
+    "question": "What API in HTML5 enables web applications to access the geographical location of the user's device?",
+    "options": [
+      "A) Geolocation API (navigator.geolocation)",
+      "B) GPS Service API",
+      "C) MapPosition API",
+      "D) LocationTracker API"
+    ],
+    "answer": "A",
+    "explanation": "The W3C Geolocation API is exposed via 'navigator.geolocation', providing asynchronous methods to obtain latitude and longitude."
+  },
+  {
+    "id": 591,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 10: Drag & Drop and Geolocation",
+    "question": "Which method of navigator.geolocation retrieves the user's current physical position once?",
+    "options": [
+      "A) getCurrentPosition(successCallback, errorCallback, options)",
+      "B) getCoordinates()",
+      "C) fetchLocation()",
+      "D) readPosition()"
+    ],
+    "answer": "A",
+    "explanation": "'navigator.geolocation.getCurrentPosition(success, error, options)' requests a single snapshot of the device's current coordinates."
+  },
+  {
+    "id": 592,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 10: Drag & Drop and Geolocation",
+    "question": "Which method of navigator.geolocation continuously monitors and notifies updates whenever the device moves?",
+    "options": [
+      "A) watchPosition()",
+      "B) trackPosition()",
+      "C) streamCoordinates()",
+      "D) followUser()"
+    ],
+    "answer": "A",
+    "explanation": "'navigator.geolocation.watchPosition()' registers a handler that is called repeatedly whenever the position changes, returning a watch ID that can be cleared with clearWatch()."
+  },
+  {
+    "id": 593,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 10: Drag & Drop and Geolocation",
+    "question": "What privacy protection is strictly enforced by modern browsers when an application calls Geolocation API methods?",
+    "options": [
+      "A) The browser must explicitly prompt the user for permission to share their location, and it requires a secure context (HTTPS)",
+      "B) Geolocation works silently without notifying the user",
+      "C) It only works when connected via Ethernet cable",
+      "D) It requires payment to the cellular carrier"
+    ],
+    "answer": "A",
+    "explanation": "To safeguard user privacy, browsers mandate an explicit user permission dialog before disclosing coordinates and restrict Geolocation strictly to secure origins (HTTPS or localhost)."
+  },
+  {
+    "id": 594,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 10: Drag & Drop and Geolocation",
+    "question": "Where are latitude and longitude values found in the position object passed to the Geolocation success callback?",
+    "options": [
+      "A) position.coords.latitude and position.coords.longitude",
+      "B) position.location.lat and position.location.lng",
+      "C) position.geo.x and position.geo.y",
+      "D) position.latitude and position.longitude"
+    ],
+    "answer": "A",
+    "explanation": "The success callback receives a Geoposition object containing 'coords' (Coordinates object) which exposes latitude, longitude, accuracy, altitude, etc."
+  },
+  {
+    "id": 595,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 10: Drag & Drop and Geolocation",
+    "question": "Which option can be passed to getCurrentPosition to request high accuracy (e.g. turning on mobile GPS)?",
+    "options": [
+      "A) { enableHighAccuracy: true }",
+      "B) { accuracy: 'maximum' }",
+      "C) { useGPS: true }",
+      "D) { highPrecision: true }"
+    ],
+    "answer": "A",
+    "explanation": "Passing '{ enableHighAccuracy: true }' in the PositionOptions object hints the browser to use more accurate positioning methods like device GPS, albeit at higher battery consumption."
+  },
+  {
+    "module": "Module 10: Drag & Drop and Geolocation",
+    "question": "Which event fires on the dragged element when the user finishes dragging, whether dropped successfully or canceled?",
+    "options": [
+      "A) dragend",
+      "B) dragleave",
+      "C) dragfinish",
+      "D) dropcomplete"
+    ],
+    "answer": "A",
+    "explanation": "'dragend' fires on the source draggable element when the drag operation completes (whether successfully dropped or canceled with ESC), used for visual cleanup.",
+    "id": 596,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 10: Drag & Drop and Geolocation",
+    "question": "What property on dataTransfer specifies the types of drag operations allowed (e.g. 'copy', 'move', 'link')?",
+    "options": [
+      "A) dataTransfer.effectAllowed",
+      "B) dataTransfer.dropEffect",
+      "C) dataTransfer.mode",
+      "D) dataTransfer.permission"
+    ],
+    "answer": "A",
+    "explanation": "'effectAllowed' is set in dragstart on the source element to declare permissible operations ('copy', 'move', 'copyMove'). 'dropEffect' is set on the drop target.",
+    "id": 597,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 10: Drag & Drop and Geolocation",
+    "question": "Which error code is returned in the Geolocation error callback when the user clicks 'Block' on the browser's location permission dialog?",
+    "options": [
+      "A) error.PERMISSION_DENIED (code 1)",
+      "B) error.POSITION_UNAVAILABLE (code 2)",
+      "C) error.TIMEOUT (code 3)",
+      "D) error.USER_REFUSED (code 4)"
+    ],
+    "answer": "A",
+    "explanation": "GeolocationPositionError.PERMISSION_DENIED (value 1) is returned when the user denies permission to share their location or system permissions are turned off.",
+    "id": 598,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 10: Drag & Drop and Geolocation",
+    "question": "What does the 'maximumAge' option in Geolocation API calls specify?",
+    "options": [
+      "A) The maximum age in milliseconds of a cached position that the application is willing to accept instead of querying hardware GPS again",
+      "B) The user's age limit",
+      "C) How long coordinates remain in localStorage",
+      "D) GPS satellite expiration date"
+    ],
+    "answer": "A",
+    "explanation": "'maximumAge' sets the acceptable age of a cached position in milliseconds. Passing 0 forces the device to retrieve an immediate fresh fix.",
+    "id": 599,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 10: Drag & Drop and Geolocation",
+    "question": "Why does dropping an element onto another element fail by default unless preventDefault() is called in dragover?",
+    "options": [
+      "A) Default browser behavior for dragover rejects drops on elements to protect against accidental file navigations",
+      "B) Because HTML requires an external drop library",
+      "C) Because CSS disables drop zones",
+      "D) Dropping only works in iframes"
+    ],
+    "answer": "A",
+    "explanation": "Browsers default to not allowing drops on web page elements. Canceling the 'dragover' event via preventDefault() announces that the element is an active drop target.",
+    "id": 600,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "id": 601,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 11: Offline Support & Web Storage",
+    "question": "What is the primary difference between localStorage and sessionStorage?",
+    "options": [
+      "A) localStorage persists data across browser restarts until explicitly cleared; sessionStorage data is cleared when the browser tab/session closes",
+      "B) sessionStorage is stored on the server; localStorage is on the client",
+      "C) localStorage only stores numbers; sessionStorage stores strings",
+      "D) sessionStorage has a 100 GB limit"
+    ],
+    "answer": "A",
+    "explanation": "localStorage persists indefinitely until programmatically removed or cleared by the user. sessionStorage is scoped strictly to the current browser tab lifecycle."
+  },
+  {
+    "id": 602,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 11: Offline Support & Web Storage",
+    "question": "What data type do both localStorage and sessionStorage store for both keys and values?",
+    "options": [
+      "A) Strings only",
+      "B) Binary byte arrays",
+      "C) Any JavaScript objects natively",
+      "D) JSON documents automatically"
+    ],
+    "answer": "A",
+    "explanation": "Web Storage APIs store data strictly as key/value pairs of UTF-16 DOMString. Non-string types are automatically converted via .toString()."
+  },
+  {
+    "id": 603,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 11: Offline Support & Web Storage",
+    "question": "How do you store a complex JavaScript object in localStorage?",
+    "options": [
+      "A) Serialize it to a JSON string using JSON.stringify(obj) before saving",
+      "B) Pass the object directly into localStorage.setItem() without conversion",
+      "C) Use localStorage.setObject()",
+      "D) Cast the object to XML"
+    ],
+    "answer": "A",
+    "explanation": "Because localStorage only stores strings, objects must be serialized using 'JSON.stringify(myObj)' before calling setItem(), and parsed back via 'JSON.parse()' upon retrieval."
+  },
+  {
+    "id": 604,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 11: Offline Support & Web Storage",
+    "question": "What method completely empties all keys stored in localStorage for the current domain origin?",
+    "options": [
+      "A) localStorage.clear()",
+      "B) localStorage.removeAll()",
+      "C) localStorage.reset()",
+      "D) localStorage.drop()"
+    ],
+    "answer": "A",
+    "explanation": "'localStorage.clear()' removes all key/value pairs stored in local storage for the calling origin."
+  },
+  {
+    "id": 605,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 11: Offline Support & Web Storage",
+    "question": "What is the typical storage capacity limit for localStorage per origin in modern browsers?",
+    "options": [
+      "A) ~5 MB to 10 MB",
+      "B) 4 KB",
+      "C) 1 GB",
+      "D) 100 MB"
+    ],
+    "answer": "A",
+    "explanation": "Modern browsers allocate approximately 5 MB (some up to 10 MB) of storage per origin for Web Storage, vastly exceeding HTTP cookies (which are capped at 4 KB)."
+  },
+  {
+    "id": 606,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 11: Offline Support & Web Storage",
+    "question": "How does Web Storage differ fundamentally from HTTP Cookies regarding network traffic?",
+    "options": [
+      "A) Cookies are sent with every single HTTP request header to the server; Web Storage data stays purely on the client and is never transmitted automatically",
+      "B) Cookies cannot be read by JavaScript",
+      "C) Web Storage is transmitted automatically with image downloads",
+      "D) Cookies are stored on disk; Web Storage is in RAM only"
+    ],
+    "answer": "A",
+    "explanation": "Cookies are transmitted with every HTTP request header to the server, adding network overhead. Web Storage remains client-side only, accessible solely by local JavaScript."
+  },
+  {
+    "id": 607,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 11: Offline Support & Web Storage",
+    "question": "In the HTML5 Application Cache (AppCache), what file must be served with MIME type 'text/cache-manifest' to list resources for offline caching?",
+    "options": [
+      "A) Cache manifest file (e.g. app.manifest)",
+      "B) offline.json",
+      "C) cache.xml",
+      "D) robots.txt"
+    ],
+    "answer": "A",
+    "explanation": "AppCache relied on a manifest file (linked via <html manifest=\"app.appcache\">) with the MIME type text/cache-manifest listing files to store offline."
+  },
+  {
+    "id": 608,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 11: Offline Support & Web Storage",
+    "question": "What are the three core sections in an AppCache manifest file?",
+    "options": [
+      "A) CACHE, NETWORK, and FALLBACK",
+      "B) ONLINE, OFFLINE, and CACHE",
+      "C) HEADER, BODY, and FOOTER",
+      "D) STATIC, DYNAMIC, and ERROR"
+    ],
+    "answer": "A",
+    "explanation": "An AppCache manifest contains: CACHE: (files to download and cache locally), NETWORK: (files that always require an internet connection), and FALLBACK: (substitutes when offline)."
+  },
+  {
+    "id": 609,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 11: Offline Support & Web Storage",
+    "question": "What property on the 'window.navigator' object indicates whether the browser currently has network connectivity?",
+    "options": [
+      "A) navigator.onLine",
+      "B) navigator.connected",
+      "C) navigator.isOffline",
+      "D) navigator.networkStatus"
+    ],
+    "answer": "A",
+    "explanation": "'navigator.onLine' returns a boolean (true if the browser has an active network connection, false if offline). Window events 'online' and 'offline' notify state changes."
+  },
+  {
+    "id": 610,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 11: Offline Support & Web Storage",
+    "question": "What event fires on the window object in OTHER tabs/windows of the same domain whenever a storage entry is modified?",
+    "options": [
+      "A) storage event",
+      "B) dataupdate event",
+      "C) sync event",
+      "D) changestorage event"
+    ],
+    "answer": "A",
+    "explanation": "The 'storage' event fires on 'window' in other open tabs or windows sharing the same origin, providing key, oldValue, newValue, and url to synchronize state."
+  },
+  {
+    "module": "Module 11: Offline Support & Web Storage",
+    "question": "What browser technology is the modern, powerful asynchronous transactional database for storing rich structured data offline, replacing Web SQL?",
+    "options": [
+      "A) IndexedDB",
+      "B) SQLite Native",
+      "C) AppCache DB",
+      "D) CloudStore"
+    ],
+    "answer": "A",
+    "explanation": "IndexedDB is the W3C standard asynchronous, transactional, object-oriented database in modern browsers for storing significant amounts of structured data, objects, and blobs.",
+    "id": 611,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 11: Offline Support & Web Storage",
+    "question": "What is the modern standard technology that replaced Application Cache (AppCache) for reliable offline web experiences and background sync?",
+    "options": [
+      "A) Service Workers and Cache API",
+      "B) Web Sockets",
+      "C) Flash Local Storage",
+      "D) WebRTC"
+    ],
+    "answer": "A",
+    "explanation": "Service Workers provide a programmable proxy layer capable of intercepting network requests, caching fine-grained assets, and providing offline functionality, officially superseding AppCache.",
+    "id": 612,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 11: Offline Support & Web Storage",
+    "question": "What happens if a user duplicates a browser tab regarding sessionStorage?",
+    "options": [
+      "A) The new tab receives a snapshot copy of the previous tab's sessionStorage, but subsequent changes in either tab remain completely isolated",
+      "B) The new tab's sessionStorage is completely empty",
+      "C) Both tabs share and synchronize changes in real time",
+      "D) The browser throws a security warning"
+    ],
+    "answer": "A",
+    "explanation": "Duplicating a tab copies the existing sessionStorage snapshot into the new tab, but both tabs diverge independently; mutations in one tab do not affect the other.",
+    "id": 613,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 11: Offline Support & Web Storage",
+    "question": "What properties does the 'storage' event object contain when another tab updates localStorage?",
+    "options": [
+      "A) key, oldValue, newValue, url, and storageArea",
+      "B) target, bubbles, type, and detail",
+      "C) id, data, hash, and timestamp",
+      "D) action, status, and rows"
+    ],
+    "answer": "A",
+    "explanation": "The StorageEvent provides key (the modified key), oldValue (previous value), newValue (new value), url (document where change occurred), and storageArea.",
+    "id": 614,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 11: Offline Support & Web Storage",
+    "question": "What API provides insight into how much storage space is currently used and available to the origin?",
+    "options": [
+      "A) navigator.storage.estimate()",
+      "B) window.getStorageQuota()",
+      "C) document.diskSpace()",
+      "D) localStorage.getCapacity()"
+    ],
+    "answer": "A",
+    "explanation": "The StorageManager API ('navigator.storage.estimate()') returns a Promise resolving to an object containing 'usage' and 'quota' byte values.",
+    "id": 615,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "id": 616,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 12: Graphics (SVG vs Canvas)",
+    "question": "What is the primary conceptual difference between SVG and HTML5 Canvas?",
+    "options": [
+      "A) SVG is XML-based vector graphics where elements exist as DOM nodes; Canvas is a pixel-based raster bitmap drawn procedurally via JavaScript",
+      "B) Canvas can be scaled indefinitely without pixelation; SVG cannot",
+      "C) SVG only works in Internet Explorer",
+      "D) Canvas requires Flash player to render"
+    ],
+    "answer": "A",
+    "explanation": "SVG is vector-based: shapes (<circle>, <rect>) are XML DOM elements that can be styled with CSS and receive event handlers. Canvas is a procedural 2D/3D pixel bitmap."
+  },
+  {
+    "id": 617,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 12: Graphics (SVG vs Canvas)",
+    "question": "What happens to a Canvas drawing when the user zooms in on a browser window?",
+    "options": [
+      "A) It can become pixelated or blurry because it is a raster bitmap",
+      "B) It automatically rescales its vectors with infinite sharpness",
+      "C) It redraws itself using SVG nodes",
+      "D) The browser throws an error"
+    ],
+    "answer": "A",
+    "explanation": "Because Canvas renders to a fixed resolution bitmap of pixels, zooming in enlarges pixels and results in pixelation unless manually redrawn at higher pixel density."
+  },
+  {
+    "id": 618,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 12: Graphics (SVG vs Canvas)",
+    "question": "How do you obtain the 2D drawing context on an HTML5 <canvas id=\"myCanvas\"> element?",
+    "options": [
+      "A) const ctx = canvas.getContext('2d');",
+      "B) const ctx = canvas.getDrawingContext();",
+      "C) const ctx = canvas.createContext2D();",
+      "D) const ctx = canvas.graphics;"
+    ],
+    "answer": "A",
+    "explanation": "'canvas.getContext('2d')' returns the CanvasRenderingContext2D object used to issue drawing commands like fillRect, strokeText, and beginPath."
+  },
+  {
+    "id": 619,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 12: Graphics (SVG vs Canvas)",
+    "question": "Can individual shapes drawn inside an HTML5 <canvas> have DOM event listeners attached directly to them (e.g. circle.addEventListener('click'))?",
+    "options": [
+      "A) No, because once drawn, shapes are just flat pixels on a bitmap; hit testing must be calculated mathematically via coordinates",
+      "B) Yes, each shape drawn on canvas is an HTML element",
+      "C) Yes, using canvas.attachShapeEvent()",
+      "D) Only if the shape is drawn in red"
+    ],
+    "answer": "A",
+    "explanation": "Canvas has no DOM nodes for drawn objects. Event listeners must be attached to the <canvas> element itself, and developers must compute coordinates to detect clicks on shapes."
+  },
+  {
+    "id": 620,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 12: Graphics (SVG vs Canvas)",
+    "question": "Which technology is best suited for complex UI icons, scalable logos, and interactive vector maps?",
+    "options": [
+      "A) SVG",
+      "B) Canvas",
+      "C) WebGL",
+      "D) GIF"
+    ],
+    "answer": "A",
+    "explanation": "SVG is ideal for user interface icons, logos, and charts because it scales crisply across all display resolutions (Retina/High-DPI), supports CSS styling, and allows DOM accessibility."
+  },
+  {
+    "id": 621,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 12: Graphics (SVG vs Canvas)",
+    "question": "Which technology is best suited for fast-paced pixel games, particle simulations, and real-time video manipulation?",
+    "options": [
+      "A) Canvas",
+      "B) SVG",
+      "C) Plain HTML tables",
+      "D) XML stylesheets"
+    ],
+    "answer": "A",
+    "explanation": "HTML5 Canvas is ideal for high-frame-rate rendering (games, particle systems) where thousands of objects are redrawn repeatedly without the overhead of thousands of DOM nodes."
+  },
+  {
+    "id": 622,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 12: Graphics (SVG vs Canvas)",
+    "question": "How do you draw a filled rectangle on a Canvas 2D context?",
+    "options": [
+      "A) ctx.fillRect(x, y, width, height);",
+      "B) ctx.drawRect(x, y, width, height);",
+      "C) ctx.rectangle(x, y, width, height, 'fill');",
+      "D) ctx.renderBox(x, y, width, height);"
+    ],
+    "answer": "A",
+    "explanation": "'ctx.fillRect(x, y, width, height)' fills a rectangle using the current fillStyle at the specified canvas coordinates."
+  },
+  {
+    "id": 623,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 12: Graphics (SVG vs Canvas)",
+    "question": "Which SVG elements are used to provide text descriptions for screen readers to make SVG accessible?",
+    "options": [
+      "A) <title> and <desc>",
+      "B) <alt> and <caption>",
+      "C) <aria-text> and <meta>",
+      "D) <label> and <info>"
+    ],
+    "answer": "A",
+    "explanation": "Inside an <svg> element, adding a '<title>' (accessible name) and '<desc>' (extended description) elements ensures assistive screen readers can interpret the graphic."
+  },
+  {
+    "id": 624,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 12: Graphics (SVG vs Canvas)",
+    "question": "How do you style the interior color and outline border of an SVG circle using CSS?",
+    "options": [
+      "A) fill: red; stroke: blue; stroke-width: 2px;",
+      "B) background-color: red; border: 2px solid blue;",
+      "C) color: red; outline: blue;",
+      "D) paint: red; border-color: blue;"
+    ],
+    "answer": "A",
+    "explanation": "SVG shapes use vector styling properties: 'fill' defines interior color, 'stroke' defines the outline color, and 'stroke-width' sets outline thickness."
+  },
+  {
+    "id": 625,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 12: Graphics (SVG vs Canvas)",
+    "question": "Which method in Canvas clears specified pixels to transparent black within a rectangular area?",
+    "options": [
+      "A) ctx.clearRect(x, y, width, height)",
+      "B) ctx.eraseRect(x, y, width, height)",
+      "C) ctx.deletePixels(x, y, width, height)",
+      "D) ctx.reset()"
+    ],
+    "answer": "A",
+    "explanation": "'ctx.clearRect(x, y, width, height)' clears all pixels in the designated rectangular area, typically called at the beginning of each frame in an animation loop."
+  },
+  {
+    "module": "Module 12: Graphics (SVG vs Canvas)",
+    "question": "What SVG element is the most versatile for drawing any complex custom shape using commands like MoveTo (M), LineTo (L), and ClosePath (Z)?",
+    "options": [
+      "A) <path>",
+      "B) <polygon>",
+      "C) <polyline>",
+      "D) <shape>"
+    ],
+    "answer": "A",
+    "explanation": "The '<path>' element with its 'd' attribute defines shapes through a sequence of path commands (M = moveto, L = lineto, C = curveto, Z = closepath).",
+    "id": 626,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 12: Graphics (SVG vs Canvas)",
+    "question": "What do the four values in the SVG 'viewBox=\"min-x min-y width height\"' attribute define?",
+    "options": [
+      "A) The internal coordinate system and aspect ratio mapping onto the SVG viewport",
+      "B) The monitor screen resolution",
+      "C) The margin and padding in pixels",
+      "D) The 3D camera angle"
+    ],
+    "answer": "A",
+    "explanation": "The viewBox defines the internal user coordinate space of the SVG graphic, allowing it to scale responsively and preserve aspect ratio across any outer container dimensions.",
+    "id": 627,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 12: Graphics (SVG vs Canvas)",
+    "question": "How do you export the current bitmap contents of an HTML5 <canvas> as a Base64 encoded PNG data URL?",
+    "options": [
+      "A) const dataUrl = canvas.toDataURL('image/png');",
+      "B) const dataUrl = canvas.saveAsImage();",
+      "C) const dataUrl = canvas.exportPNG();",
+      "D) const dataUrl = ctx.getPixelsAsBase64();"
+    ],
+    "answer": "A",
+    "explanation": "'canvas.toDataURL(type)' returns a data URI containing a representation of the image in the specified format (defaults to image/png).",
+    "id": 628,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 12: Graphics (SVG vs Canvas)",
+    "question": "Where is the coordinate origin (0, 0) located by default on both an HTML5 Canvas and an SVG element?",
+    "options": [
+      "A) Top-left corner (X increases rightward, Y increases downward)",
+      "B) Bottom-left corner (Cartesian system)",
+      "C) Center of the element",
+      "D) Top-right corner"
+    ],
+    "answer": "A",
+    "explanation": "Computer graphics coordinate systems place (0, 0) at the top-left corner, with the X axis extending to the right and the Y axis extending downwards.",
+    "id": 629,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 12: Graphics (SVG vs Canvas)",
+    "question": "Which Canvas 2D method renders filled text onto the drawing canvas?",
+    "options": [
+      "A) ctx.fillText(text, x, y [, maxWidth])",
+      "B) ctx.drawText(text, x, y)",
+      "C) ctx.write(text, x, y)",
+      "D) ctx.print(text, x, y)"
+    ],
+    "answer": "A",
+    "explanation": "'ctx.fillText(text, x, y)' fills a given text at the specified coordinates using the current font and fillStyle.",
+    "id": 630,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "id": 631,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 13: Remote Data & AJAX",
+    "question": "What does AJAX stand for?",
+    "options": [
+      "A) Asynchronous JavaScript and XML",
+      "B) Automated JSON Application eXchange",
+      "C) Advanced JavaScript Async Kernel",
+      "D) Application Java Access XML"
+    ],
+    "answer": "A",
+    "explanation": "AJAX stands for Asynchronous JavaScript and XML, a suite of technologies that allows web pages to send and retrieve data from a web server asynchronously in the background."
+  },
+  {
+    "id": 632,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 13: Remote Data & AJAX",
+    "question": "Which core browser object is historically used to initiate HTTP requests in AJAX?",
+    "options": [
+      "A) XMLHttpRequest",
+      "B) HttpRequest",
+      "C) WebConnector",
+      "D) SocketRequest"
+    ],
+    "answer": "A",
+    "explanation": "The 'XMLHttpRequest' (XHR) object is the foundational browser API used to send HTTP/HTTPS requests to servers and receive responses asynchronously."
+  },
+  {
+    "id": 633,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 13: Remote Data & AJAX",
+    "question": "In XMLHttpRequest, which readyState value indicates that the operation is complete ('DONE')?",
+    "options": [
+      "A) 4",
+      "B) 3",
+      "C) 1",
+      "D) 200"
+    ],
+    "answer": "A",
+    "explanation": "The readyState values are: 0 (UNSENT), 1 (OPENED), 2 (HEADERS_RECEIVED), 3 (LOADING), and 4 (DONE - request finished and response is ready)."
+  },
+  {
+    "id": 634,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 13: Remote Data & AJAX",
+    "question": "Which HTTP status code signifies that the server successfully processed the request?",
+    "options": [
+      "A) 200 OK",
+      "B) 304 Not Modified",
+      "C) 404 Not Found",
+      "D) 500 Internal Server Error"
+    ],
+    "answer": "A",
+    "explanation": "HTTP 200 OK indicates that the client request succeeded and the server returned the requested payload."
+  },
+  {
+    "id": 635,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 13: Remote Data & AJAX",
+    "question": "What method parses a JSON formatted string into a JavaScript object?",
+    "options": [
+      "A) JSON.parse(jsonString)",
+      "B) JSON.stringify(object)",
+      "C) JSON.toObject(jsonString)",
+      "D) eval(jsonString)"
+    ],
+    "answer": "A",
+    "explanation": "'JSON.parse()' safely parses a JSON string, constructing the corresponding JavaScript value or object. 'JSON.stringify()' converts an object into a JSON string."
+  },
+  {
+    "id": 636,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 13: Remote Data & AJAX",
+    "question": "What security policy restricts a web application from making AJAX requests to a different domain, port, or protocol than the origin that served the page?",
+    "options": [
+      "A) Same-Origin Policy (SOP)",
+      "B) Secure Sockets Policy",
+      "C) Content Security Encryption",
+      "D) Cross-Domain Block Protocol"
+    ],
+    "answer": "A",
+    "explanation": "The Same-Origin Policy (SOP) is an essential browser security mechanism that prohibits scripts from loading resources or querying endpoints on an origin with a different protocol, host, or port."
+  },
+  {
+    "id": 637,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 13: Remote Data & AJAX",
+    "question": "What standard HTTP header mechanism allows a server to explicitly permit cross-origin AJAX requests from other domains?",
+    "options": [
+      "A) CORS (Cross-Origin Resource Sharing)",
+      "B) JSONP",
+      "C) HTTPS Tunneling",
+      "D) FTP Proxy"
+    ],
+    "answer": "A",
+    "explanation": "CORS (Cross-Origin Resource Sharing) uses HTTP response headers (such as 'Access-Control-Allow-Origin: *') to permit browsers to access resources from external domains."
+  },
+  {
+    "id": 638,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 13: Remote Data & AJAX",
+    "question": "What order of calls must be made on an XMLHttpRequest object to initiate an asynchronous GET request?",
+    "options": [
+      "A) const xhr = new XMLHttpRequest(); xhr.open('GET', url, true); xhr.send();",
+      "B) xhr.send(); xhr.open();",
+      "C) xhr.execute('GET', url);",
+      "D) xhr.connect(url); xhr.fetch();"
+    ],
+    "answer": "A",
+    "explanation": "The sequence is: instantiate the object with 'new XMLHttpRequest()', configure request method and URL with 'xhr.open()', wire event listeners, and transmit the request with 'xhr.send()'."
+  },
+  {
+    "id": 639,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 13: Remote Data & AJAX",
+    "question": "What property on an XMLHttpRequest object contains the response data as text?",
+    "options": [
+      "A) xhr.responseText",
+      "B) xhr.data",
+      "C) xhr.content",
+      "D) xhr.body"
+    ],
+    "answer": "A",
+    "explanation": "'xhr.responseText' contains the text received from the server as a string (or xhr.responseXML if the response is valid XML)."
+  },
+  {
+    "id": 640,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 13: Remote Data & AJAX",
+    "question": "What HTTP method should be used when submitting data via AJAX to create a new record on the server?",
+    "options": [
+      "A) POST",
+      "B) GET",
+      "C) OPTIONS",
+      "D) HEAD"
+    ],
+    "answer": "A",
+    "explanation": "HTTP POST is used to submit entity data to a specified resource, resulting in state change or record creation on the server."
+  },
+  {
+    "module": "Module 13: Remote Data & AJAX",
+    "question": "What is the key difference between the modern Fetch API and XMLHttpRequest?",
+    "options": [
+      "A) Fetch is native Promise-based with cleaner syntax; XMLHttpRequest is callback-based and event-driven",
+      "B) XMLHttpRequest does not support HTTP POST",
+      "C) Fetch only works with XML",
+      "D) XMLHttpRequest is faster than Fetch"
+    ],
+    "answer": "A",
+    "explanation": "The Fetch API provides a modern Promise-based interface that integrates seamlessly with async/await, avoiding the verbose event-driven callback model of XMLHttpRequest.",
+    "id": 641,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 13: Remote Data & AJAX",
+    "question": "How do you set custom request headers (such as Content-Type) on an XMLHttpRequest before sending?",
+    "options": [
+      "A) xhr.setRequestHeader('Content-Type', 'application/json');",
+      "B) xhr.addHeader('Content-Type', 'application/json');",
+      "C) xhr.header('Content-Type', 'application/json');",
+      "D) xhr.headers['Content-Type'] = 'application/json';"
+    ],
+    "answer": "A",
+    "explanation": "'xhr.setRequestHeader(header, value)' sets HTTP request headers. It must be invoked after xhr.open() but prior to xhr.send().",
+    "id": 642,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 13: Remote Data & AJAX",
+    "question": "What is the difference between HTTP status code 401 Unauthorized and 403 Forbidden?",
+    "options": [
+      "A) 401 indicates authentication is required or credentials are invalid; 403 indicates authentication succeeded but the authenticated user lacks permissions to access the resource",
+      "B) 401 is a server crash; 403 is client offline",
+      "C) 403 is for guest users only",
+      "D) There is no difference"
+    ],
+    "answer": "A",
+    "explanation": "401 Unauthorized denotes missing or invalid credentials (who are you?). 403 Forbidden denotes that credentials are authenticated, but the user is forbidden access (you cannot do this).",
+    "id": 643,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 13: Remote Data & AJAX",
+    "question": "How do you cancel or abort an active Fetch API request in modern JavaScript?",
+    "options": [
+      "A) Using an AbortController: pass controller.signal in fetch options and call controller.abort()",
+      "B) Calling fetch.cancel()",
+      "C) Deleting the promise",
+      "D) Calling window.stop()"
+    ],
+    "answer": "A",
+    "explanation": "AbortController allows canceling fetch requests by passing its 'signal' property into the fetch options and calling 'controller.abort()'.",
+    "id": 644,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 13: Remote Data & AJAX",
+    "question": "Why should calls to JSON.parse() be wrapped in a try...catch block?",
+    "options": [
+      "A) If the incoming string is malformed or invalid JSON, JSON.parse() throws a synchronous SyntaxError exception that can crash execution",
+      "B) Because JSON.parse() returns a Promise",
+      "C) To prevent memory corruption",
+      "D) Because JSON.parse() is asynchronous"
+    ],
+    "answer": "A",
+    "explanation": "Passing invalid, truncated, or non-JSON strings (like HTML error pages returned from servers) into JSON.parse() throws a fatal SyntaxError unless caught in a try/catch block.",
+    "id": 645,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "id": 646,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 14: Web Workers",
+    "question": "What fundamental limitation in JavaScript's standard execution model do Web Workers solve?",
+    "options": [
+      "A) JavaScript's single-threaded nature where heavy computations block the UI thread and freeze user interactions",
+      "B) Inability to make network requests",
+      "C) Lack of support for mathematical arithmetic",
+      "D) Lack of local storage"
+    ],
+    "answer": "A",
+    "explanation": "JavaScript is single-threaded; long-running synchronous code freezes the main UI thread. Web Workers run scripts in background worker threads concurrently without interrupting the UI."
+  },
+  {
+    "id": 647,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 14: Web Workers",
+    "question": "How do you instantiate a dedicated Web Worker in JavaScript?",
+    "options": [
+      "A) const worker = new Worker('worker.js');",
+      "B) const worker = window.createThread('worker.js');",
+      "C) const worker = new BackgroundProcess('worker.js');",
+      "D) const worker = Thread.fork('worker.js');"
+    ],
+    "answer": "A",
+    "explanation": "'new Worker(\"script.js\")' creates and starts a dedicated background worker running the specified JavaScript file."
+  },
+  {
+    "id": 648,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 14: Web Workers",
+    "question": "How does the main UI thread communicate and exchange data with a Web Worker?",
+    "options": [
+      "A) By posting serialized messages using postMessage() and receiving them via the 'onmessage' event listener",
+      "B) By directly modifying shared global variables in window",
+      "C) By reading and writing to the DOM tree",
+      "D) Using SQL queries in tempdb"
+    ],
+    "answer": "A",
+    "explanation": "Communication between workers and the main thread is strictly message-based: 'worker.postMessage(data)' sends messages, and 'worker.onmessage = function(e) { ... }' handles received messages."
+  },
+  {
+    "id": 649,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 14: Web Workers",
+    "question": "Which of the following objects is completely INACCESSIBLE inside a Web Worker thread?",
+    "options": [
+      "A) document and window (the DOM)",
+      "B) navigator",
+      "C) location",
+      "D) setTimeout / setInterval"
+    ],
+    "answer": "A",
+    "explanation": "Web Workers have no direct access to the DOM, 'window', or 'document' objects to avoid multi-threaded race conditions. Workers can access navigator, location, setTimeout, and XMLHttpRequest/fetch."
+  },
+  {
+    "id": 650,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 14: Web Workers",
+    "question": "How does a Web Worker script terminate ITSELF from within the worker script?",
+    "options": [
+      "A) close();",
+      "B) terminate();",
+      "C) exit();",
+      "D) destroy();"
+    ],
+    "answer": "A",
+    "explanation": "Inside the worker's own scope, calling 'close()' stops the worker immediately. From the main thread, 'worker.terminate()' terminates the worker."
+  },
+  {
+    "id": 651,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 14: Web Workers",
+    "question": "What event handler catches and handles uncaught runtime exceptions occurring inside a Web Worker?",
+    "options": [
+      "A) worker.onerror",
+      "B) worker.onfail",
+      "C) worker.oncatch",
+      "D) worker.onexception"
+    ],
+    "answer": "A",
+    "explanation": "The 'onerror' event handler on the Worker object receives an ErrorEvent containing filename, lineno, and message when an unhandled error occurs in the worker."
+  },
+  {
+    "id": 652,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 14: Web Workers",
+    "question": "How does data passed via postMessage() typically travel between threads in standard Web Workers?",
+    "options": [
+      "A) It is cloned via the Structured Clone algorithm (deep copy), ensuring memory isolation",
+      "B) It shares identical memory pointers directly",
+      "C) It is converted to binary and written to hard drive files",
+      "D) It is transmitted over WebSockets"
+    ],
+    "answer": "A",
+    "explanation": "Data sent via postMessage is duplicated using the Structured Clone algorithm, giving each thread its own independent copy to maintain thread isolation (unless using Transferable objects like ArrayBuffer)."
+  },
+  {
+    "id": 653,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 14: Web Workers",
+    "question": "What is a Shared Worker in JavaScript?",
+    "options": [
+      "A) A worker that can be accessed and shared across multiple browser tabs, windows, or iframes running under the same origin",
+      "B) A worker shared between different computers on a LAN",
+      "C) A worker that shares DOM access with the main thread",
+      "D) A peer-to-peer torrent client"
+    ],
+    "answer": "A",
+    "explanation": "A SharedWorker ('new SharedWorker()') can communicate with multiple browsing contexts (different tabs, windows, or iframes) via MessagePorts."
+  },
+  {
+    "id": 654,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 14: Web Workers",
+    "question": "What function can be used inside a Web Worker to synchronously load and execute external JavaScript libraries?",
+    "options": [
+      "A) importScripts('library.js');",
+      "B) require('library.js');",
+      "C) include('library.js');",
+      "D) loadScript('library.js');"
+    ],
+    "answer": "A",
+    "explanation": "The 'importScripts(url1, url2, ...)' function loads and executes external script files synchronously inside the worker's global scope."
+  },
+  {
+    "id": 655,
+    "subject": "HTML, CSS & JavaScript",
+    "module": "Module 14: Web Workers",
+    "question": "What global scope object represents the worker's context inside a dedicated Web Worker?",
+    "options": [
+      "A) self (or DedicatedWorkerGlobalScope)",
+      "B) window",
+      "C) document",
+      "D) parent"
+    ],
+    "answer": "A",
+    "explanation": "Inside a worker, the global execution context is referenced by 'self' (DedicatedWorkerGlobalScope). Calling postMessage() or addEventListener('message', ...) operates on 'self'."
+  },
+  {
+    "module": "Module 14: Web Workers",
+    "question": "What are 'Transferable Objects' (such as ArrayBuffer) in Web Worker communication?",
+    "options": [
+      "A) Objects whose ownership and memory buffer are transferred instantly with zero copying overhead, making them inaccessible in the sending context",
+      "B) Objects transferred via Bluetooth",
+      "C) Objects converted to text strings",
+      "D) Objects saved to the cloud"
+    ],
+    "answer": "A",
+    "explanation": "Transferable objects transfer memory ownership directly between contexts with zero-copy overhead. Once transferred, the object is detached and becomes unusable in the sender context.",
+    "id": 656,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 14: Web Workers",
+    "question": "What property on the 'window.navigator' object reports the number of logical processor cores available on the user's computer?",
+    "options": [
+      "A) navigator.hardwareConcurrency",
+      "B) navigator.cpuCores",
+      "C) navigator.processors",
+      "D) navigator.threadCount"
+    ],
+    "answer": "A",
+    "explanation": "'navigator.hardwareConcurrency' returns the number of logical processors, enabling web applications to spawn an optimal pool of Web Workers without overloading the CPU.",
+    "id": 657,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 14: Web Workers",
+    "question": "What is the difference between calling 'worker.terminate()' and 'self.close()'?",
+    "options": [
+      "A) 'worker.terminate()' is called from the main UI thread to kill the worker immediately; 'self.close()' is called by the worker script inside itself to stop its own execution",
+      "B) 'terminate' is asynchronous; 'close' is synchronous",
+      "C) 'self.close()' restarts the worker",
+      "D) There is no difference"
+    ],
+    "answer": "A",
+    "explanation": "From the parent thread, calling 'worker.terminate()' forcibly stops the worker thread. From inside the worker, calling 'self.close()' stops its own event loop and terminates itself.",
+    "id": 658,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 14: Web Workers",
+    "question": "Why does an error inside a Web Worker script not trigger the main thread's 'window.onerror' handler automatically?",
+    "options": [
+      "A) Web Workers run in an isolated execution context with their own global scope (DedicatedWorkerGlobalScope), dispatching errors to 'worker.onerror' on the Worker instance",
+      "B) Worker errors are suppressed by browsers",
+      "C) Workers cannot have syntax errors",
+      "D) Worker errors trigger alert boxes"
+    ],
+    "answer": "A",
+    "explanation": "Because Web Workers execute in separate thread contexts, unhandled exceptions do not bubble to 'window'. Instead, they fire the 'error' event on the Worker instance in the main script.",
+    "id": 659,
+    "subject": "HTML, CSS & JavaScript"
+  },
+  {
+    "module": "Module 14: Web Workers",
+    "question": "Can Web Workers initiate network requests using fetch() or XMLHttpRequest?",
+    "options": [
+      "A) Yes, Web Workers have full access to network APIs like fetch() and XMLHttpRequest to download and upload data in the background",
+      "B) No, Web Workers are completely disconnected from the network",
+      "C) Only via WebSockets",
+      "D) Only if running on HTTPS"
+    ],
+    "answer": "A",
+    "explanation": "Web Workers can freely make network requests using fetch() or XMLHttpRequest to fetch data, parse it in the background thread, and send processed results back to the UI thread.",
+    "id": 660,
+    "subject": "HTML, CSS & JavaScript"
+  }
+]
